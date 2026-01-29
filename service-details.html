@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pottery Starter Kit - DIY Craft Studio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio
+            </a>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="services.html" class="nav-item active">Workshops</a>
+                <a href="services.html" class="nav-item active">Kits</a>
+                <a href="services.html" class="nav-item active">Tutorials</a>
+                <a href="blog.html" class="nav-item">Blog</a>
+                <a href="pricing.html" class="nav-item">Pricing</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="login.html" class="nav-item">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <div style="margin-top: 50px;">
+            <a href="index.html" class="sidebar-item">Home</a>
+            <a href="services.html" class="sidebar-item">Services</a>
+            <!-- ... -->
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- Product Detail Section -->
+    <section class="section-padding" style="padding-top: 50px;">
+        <div class="container">
+            <div style="display: flex; gap: 50px; flex-wrap: wrap;">
+                <!-- Image Gallery -->
+                <div style="flex: 1; min-width: 300px;">
+                    <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Pottery Kit" style="border-radius: 20px; width: 100%; margin-bottom: 20px;">
+                    <div style="display: flex; gap: 10px;">
+                        <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                            style="width: 80px; height: 80px; object-fit: cover; border-radius: 10px; cursor: pointer;">
+                        <img src="https://images.unsplash.com/photo-1616428453472-b7e1ce247752?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                            style="width: 80px; height: 80px; object-fit: cover; border-radius: 10px; cursor: pointer;">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div style="flex: 1; min-width: 300px;">
+                    <span
+                        style="color: var(--primary); font-weight: 600; font-size: 14px; text-transform: uppercase;">Ready-to-Use
+                        Kit</span>
+                    <h1 class="mb-2">Home Pottery Starter Kit</h1>
+                    <div class="mb-3" style="color: #F4B400;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span style="color: #666; margin-left: 10px;">(128 Reviews)</span>
+                    </div>
+                    <p class="mb-4" style="color: #666; font-size: 16px;">
+                        Create your own mugs, bowls, and vases at home with our all-in-one air-dry clay kit. Perfect for
+                        beginners, this kit comes with everything you need—tools, paint, sealant, and a step-by-step
+                        30-page guidebook. No kiln needed!
+                    </p>
+
+                    <!-- Pricing Options -->
+                    <div style="background: #f9f9f9; padding: 20px; border-radius: 15px; margin-bottom: 30px;">
+                        <div
+                            style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                            <label style="font-weight: 600; cursor: pointer;">
+                                <input type="radio" name="plan" checked> Basic Kit (Tools + Clay)
+                            </label>
+                            <span style="font-weight: 700; font-size: 18px;">$45.00</span>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                            <label style="font-weight: 600; cursor: pointer;">
+                                <input type="radio" name="plan"> Premium Kit (+ Paints & Guide)
+                            </label>
+                            <span style="font-weight: 700; font-size: 18px;">$65.00</span>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 20px;">
+                        <input type="number" value="1"
+                            style="width: 60px; padding: 10px; border-radius: 10px; border: 1px solid #ddd; text-align: center;">
+                        <button class="btn btn-primary" style="flex: 1;">Add to Cart</button>
+                    </div>
+
+                    <div style="margin-top: 30px; font-size: 14px; color: #666;">
+                        <p><i class="fa-solid fa-truck" style="color: var(--primary); margin-right: 10px;"></i> Free
+                            shipping on orders over $100</p>
+                        <p style="margin-top: 5px;"><i class="fa-solid fa-box"
+                                style="color: var(--primary); margin-right: 10px;"></i> 30-day return policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding" style="background: white;">
+        <div class="container" style="max-width: 800px;">
+            <div class="text-center mb-5">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <h4 style="margin-bottom: 10px;">Do I need a kiln for this clay?</h4>
+                <p style="color: #666;">No! This is premium air-dry clay. It dries hard in 24-48 hours. However, it is
+                    not food safe for liquids unless you use a waterproof sealant (included in Premium Kit).</p>
+            </div>
+
+            <div style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <h4 style="margin-bottom: 10px;">Is this suitable for kids?</h4>
+                <p style="color: #666;">Yes, absolutely! It's non-toxic and great for ages 6+. We recommend adult
+                    supervision for using the cutting tools.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <h4 style="margin-bottom: 10px;">Does it come with video instructions?</h4>
+                <p style="color: #666;">Yes, every kit includes a QR code that links to our exclusive video tutorial
+                    library.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Reusing Footer Structure -->
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2><i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio</h2>
+                    <p class="footer-text">Empowering creativity through accessible tools.</p>
+                </div>
+                <!-- ... -->
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DIY Craft Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

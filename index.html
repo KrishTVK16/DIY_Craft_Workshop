@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Craft Studio - Creative Learning & Commerce</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item active">Home</a>
+                <a href="services.html" class="nav-item">Workshops</a>
+                <a href="services.html" class="nav-item">Kits</a>
+                <a href="services.html" class="nav-item">Tutorials</a>
+                <a href="blog.html" class="nav-item">Blog</a>
+                <a href="pricing.html" class="nav-item">Pricing</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="login.html" class="nav-item">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <div style="margin-top: 50px;">
+            <a href="index.html" class="sidebar-item">Home</a>
+            <a href="services.html" class="sidebar-item">Workshops</a>
+            <a href="services.html" class="sidebar-item">Kits</a>
+            <a href="services.html" class="sidebar-item">Tutorials</a>
+            <a href="blog.html" class="sidebar-item">Blog</a>
+            <a href="pricing.html" class="sidebar-item">Pricing</a>
+            <a href="contact.html" class="sidebar-item">Contact</a>
+            <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+            <a href="login.html" class="sidebar-item">Login</a>
+            <a href="register.html" class="sidebar-item">Sign Up</a>
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero container">
+        <div class="hero-content">
+            <span class="hero-tag">✨ #1 Creative Platform</span>
+            <h1 class="hero-title">Unleash Your Inner Artist with DIY Crafts</h1>
+            <p class="hero-text">Join our workshops, buy premium craft kits, or learn online at your own pace. Everything you need to create something beautiful, all in one place.</p>
+            <div style="display: flex; gap: 15px;">
+                <a href="services.html" class="btn btn-primary">Browse Kits</a>
+                <a href="services.html" class="btn btn-outline">Book Workshop</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-img-wrapper">
+                <!-- Placeholder Image -->
+                <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Creative Craft Workshop">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section-padding" style="background-color: white;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h4 style="color: var(--primary);">Our Services</h4>
+                <h2>Ways to Learn & Create</h2>
+                <p>Choose the learning style that fits you best</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Workshops -->
+                <article class="service-card">
+                    <i class="fa-solid fa-chalkboard-user service-icon"></i>
+                    <h3 class="service-title">Live Workshops</h3>
+                    <p class="mb-3">Join us in-studio for hands-on guidance from expert artists.</p>
+                    <a href="services.html" class="btn btn-outline">Book Now</a>
+                </article>
+
+                <!-- Kits -->
+                <article class="service-card">
+                    <i class="fa-solid fa-box-open service-icon"></i>
+                    <h3 class="service-title">DIY Craft Kits</h3>
+                    <p class="mb-3">Premium materials delivered to your door with instructions.</p>
+                    <a href="services.html" class="btn btn-outline">Shop Kits</a>
+                </article>
+
+                <!-- Tutorials -->
+                <article class="service-card">
+                    <i class="fa-solid fa-video service-icon"></i>
+                    <h3 class="service-title">Online Tutorials</h3>
+                    <p class="mb-3">Watch high-quality video lessons anytime, anywhere.</p>
+                    <a href="services.html" class="btn btn-outline">Start Watching</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Kits Preview -->
+    <section class="section-padding">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: end; margin-bottom: 40px;">
+                <div>
+                    <h4 style="color: var(--primary);">Shop</h4>
+                    <h2>Trending DIY Kits</h2>
+                </div>
+                <a href="services.html" style="color: var(--primary); font-weight: 600;">View All <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="card-grid">
+                <!-- Kit 1 -->
+                <div class="product-card">
+                    <div class="card-img">
+                        <span class="card-badge">Best Seller</span>
+                        <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pottery Kit">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category">Ceramics</span>
+                        <h3 class="card-title">Home Pottery Starter Kit</h3>
+                        <span class="card-price">$45.00</span>
+                        <div class="card-footer">
+                            <span class="rating"><i class="fa-solid fa-star"></i> 4.9 (120)</span>
+                            <button class="btn-outline" style="padding: 5px 15px; font-size: 12px; border-radius: 5px;">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kit 2 -->
+                <div class="product-card">
+                    <div class="card-img">
+                        <span class="card-badge">New</span>
+                        <img src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Embroidery Kit">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category">Textiles</span>
+                        <h3 class="card-title">Floral Embroidery Set</h3>
+                        <span class="card-price">$28.00</span>
+                        <div class="card-footer">
+                            <span class="rating"><i class="fa-solid fa-star"></i> 4.8 (85)</span>
+                            <button class="btn-outline" style="padding: 5px 15px; font-size: 12px; border-radius: 5px;">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kit 3 -->
+                <div class="product-card">
+                    <div class="card-img">
+                         <span class="card-badge" style="background: var(--tertiary); color: white;">Sale</span>
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Painting Kit">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category">Art</span>
+                        <h3 class="card-title">Acrylic Painting Master Box</h3>
+                        <span class="card-price">$55.00 <span style="text-decoration: line-through; color: #999; font-size: 14px; margin-left:5px;">$65.00</span></span>
+                        <div class="card-footer">
+                            <span class="rating"><i class="fa-solid fa-star"></i> 5.0 (42)</span>
+                            <button class="btn-outline" style="padding: 5px 15px; font-size: 12px; border-radius: 5px;">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2><i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio</h2>
+                    <p class="footer-text">Empowering creativity through accessible tools, expert guidance, and a supportive community. Start your journey today.</p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#"><i class="fa-brands fa-instagram" style="font-size: 20px; color: var(--tertiary);"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook" style="font-size: 20px; color: var(--tertiary);"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest" style="font-size: 20px; color: var(--tertiary);"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="footer-text">Get fresh DIY ideas and exclusive discounts.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email">
+                        <button type="submit" class="btn btn-primary" style="padding: 12px 20px;"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 DIY Craft Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

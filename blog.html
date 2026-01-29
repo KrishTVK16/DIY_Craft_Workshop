@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - DIY Craft Studio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="services.html" class="nav-item">Services</a>
+                <a href="blog.html" class="nav-item active">Blog</a>
+                <a href="pricing.html" class="nav-item">Pricing</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="login.html" class="nav-item">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <!-- ... -->
+        <div style="margin-top: 50px;">
+            <a href="index.html" class="sidebar-item">Home</a>
+            <a href="blog.html" class="sidebar-item">Blog</a>
+            <!-- ... -->
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- Page Header -->
+    <div class="section-padding text-center" style="background: white;">
+        <div class="container">
+            <h1 class="mb-2">Crafting Journal</h1>
+            <p>Tips, tutorials, and inspiration from our community</p>
+        </div>
+    </div>
+
+    <!-- Blog Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div
+                style="display: flex; justify-content: space-between; margin-bottom: 40px; flex-wrap: wrap; gap: 20px;">
+                <!-- Filter -->
+                <div style="display: flex; gap: 10px;">
+                    <button class="btn btn-primary">All</button>
+                    <button class="btn btn-outline">Tutorials</button>
+                    <button class="btn btn-outline">Artist Stories</button>
+                    <button class="btn btn-outline">Tips</button>
+                </div>
+                <!-- Search -->
+                <div style="position: relative;">
+                    <input type="text" placeholder="Search articles..."
+                        style="padding: 10px 20px; border-radius: 50px; border: 1px solid #ddd; outline: none; width: 250px;">
+                    <i class="fa-solid fa-magnifying-glass"
+                        style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); color: #888;"></i>
+                </div>
+            </div>
+
+            <div class="card-grid">
+                <!-- Blog 1 -->
+                <div class="product-card" style="border: none; box-shadow: none; background: transparent;">
+                    <div class="card-img" style="border-radius: 15px; overflow: hidden; margin-bottom: 20px;">
+                        <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Blog 1">
+                    </div>
+                    <div>
+                        <span style="color: var(--primary); font-weight: 600; font-size: 13px;">TUTORIAL</span>
+                        <h3 class="card-title"><a href="blog-details.html">5 Easy Steps to Start Pottery at Home</a>
+                        </h3>
+                        <p style="color: #666; font-size: 15px; margin-bottom: 15px;">Discover the basics of working
+                            with air-dry clay without needing any expensive equipment.</p>
+                        <a href="blog-details.html" style="font-weight: 600; color: var(--tertiary);">Read More <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog 2 -->
+                <div class="product-card" style="border: none; box-shadow: none; background: transparent;">
+                    <div class="card-img" style="border-radius: 15px; overflow: hidden; margin-bottom: 20px;">
+                        <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Blog 2">
+                    </div>
+                    <div>
+                        <span style="color: var(--primary); font-weight: 600; font-size: 13px;">INSPIRATION</span>
+                        <h3 class="card-title"><a href="blog-details.html">Why Handmade Gifts Are The Best</a></h3>
+                        <p style="color: #666; font-size: 15px; margin-bottom: 15px;">There is something special about
+                            giving a gift that you made with your own two hands.</p>
+                        <a href="blog-details.html" style="font-weight: 600; color: var(--tertiary);">Read More <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog 3 -->
+                <div class="product-card" style="border: none; box-shadow: none; background: transparent;">
+                    <div class="card-img" style="border-radius: 15px; overflow: hidden; margin-bottom: 20px;">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Blog 3">
+                    </div>
+                    <div>
+                        <span style="color: var(--primary); font-weight: 600; font-size: 13px;">COMMUNITY</span>
+                        <h3 class="card-title"><a href="blog-details.html">Artist Spotlight: Sarah Jenkins</a></h3>
+                        <p style="color: #666; font-size: 15px; margin-bottom: 15px;">We sat down with our lead ceramics
+                            instructor to talk about her creative journey.</p>
+                        <a href="blog-details.html" style="font-weight: 600; color: var(--tertiary);">Read More <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- ... -->
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 DIY Craft Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

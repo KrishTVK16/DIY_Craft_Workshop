@@ -38,6 +38,10 @@
             </nav>
 
             <div class="nav-actions">
+                <div class="theme-toggle" id="theme-toggle" title="Toggle Light/Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </div>
                 <a href="login.html" class="nav-item">Login</a>
                 <a href="register.html" class="btn btn-primary">Sign Up</a>
                 <div class="hamburger">
@@ -49,7 +53,7 @@
 
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu">
-        <div style="margin-top: 50px;">
+        <div class="mobile-menu-content">
             <a href="index.html" class="sidebar-item">Home 1</a>
             <a href="home2.html" class="sidebar-item">Home 2</a>
             <a href="about.html" class="sidebar-item">About</a>
@@ -59,7 +63,7 @@
             <a href="blog.html" class="sidebar-item">Blog</a>
             <a href="pricing.html" class="sidebar-item">Pricing</a>
             <a href="contact.html" class="sidebar-item">Contact</a>
-            <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+            <hr style="margin: 15px 0; border: 0; border-top: 1px solid var(--border-color);">
             <a href="login.html" class="sidebar-item">Login</a>
             <a href="register.html" class="sidebar-item">Sign Up</a>
         </div>
@@ -73,9 +77,9 @@
             <h1 class="hero-title">Unleash Your Inner Artist with DIY Crafts</h1>
             <p class="hero-text">Join our workshops, buy premium craft kits, or learn online at your own pace.
                 Everything you need to create something beautiful, all in one place.</p>
-            <div style="display: flex; gap: 15px;">
-                <a href="#kits" class="btn btn-primary">Browse Kits</a>
-                <a href="#workshops" class="btn btn-outline">Book Workshop</a>
+            <div class="hero-btns animate-on-scroll" data-animation="fade-in-up">
+                <a href="services.html" class="btn btn-primary">Join a Workshop</a>
+                <a href="services.html" class="btn btn-outline">Explore Kits</a>
             </div>
         </div>
         <div class="hero-image animate-on-scroll" data-animation="slide-in-right">
@@ -88,7 +92,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="workshops" class="section-padding" style="background-color: white;">
+    <section id="workshops" class="section-padding" style="background-color: var(--bg-section);">
         <div class="container">
             <div class="text-center mb-5 animate-on-scroll" data-animation="fade-in-up">
                 <h4 style="color: var(--primary);">Our Services</h4>
@@ -187,7 +191,7 @@
                         <span class="card-category">Art</span>
                         <h3 class="card-title">Acrylic Painting Master Box</h3>
                         <span class="card-price">$55.00 <span
-                                style="text-decoration: line-through; color: #999; font-size: 14px; margin-left:5px;">$65.00</span></span>
+                                style="text-decoration: line-through; color: var(--text-muted); font-size: 14px; margin-left:5px;">$65.00</span></span>
                         <div class="card-footer">
                             <span class="rating"><i class="fa-solid fa-star"></i> 5.0 (42)</span>
                             <button class="btn-outline"
@@ -200,7 +204,7 @@
     </section>
 
     <!-- Footer -->
-    <section id="community" class="section-padding" style="background-color: white;">
+    <section id="community" class="section-padding" style="background-color: var(--bg-section);">
         <div class="container">
             <div class="text-center mb-5 animate-on-scroll" data-animation="fade-in-up">
                 <h4 style="color: var(--primary);">Community</h4>
@@ -245,7 +249,7 @@
                 <p>Join our next workshop or get a premium DIY kit delivered to your doorstep.</p>
                 <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                     <a href="services.html" class="btn btn-primary">Book a Workshop</a>
-                    <a href="services.html" class="btn btn-outline" style="color: white; border-color: white;">Shop DIY
+                    <a href="services.html" class="btn btn-outline">Shop DIY
                         Kits</a>
                 </div>
             </div>
@@ -311,5 +315,3 @@
 </body>
 
 </html>
-
-

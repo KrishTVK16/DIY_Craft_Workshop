@@ -29,18 +29,22 @@
                 <a href="index.html" class="nav-item">Home 1</a>
                 <a href="home2.html" class="nav-item active">Home 2</a>
                 <a href="about.html" class="nav-item">About</a>
-                <a href="#workshops" class="nav-item">Workshops</a>
-                <a href="#gallery" class="nav-item">Gallery</a>
-                <a href="#community" class="nav-item">Community</a>
+                <a href="services.html" class="nav-item">Workshops</a>
+                <a href="services.html" class="nav-item">Kits</a>
+                <a href="services.html" class="nav-item">Tutorials</a>
                 <a href="blog.html" class="nav-item">Blog</a>
                 <a href="pricing.html" class="nav-item">Pricing</a>
                 <a href="contact.html" class="nav-item">Contact</a>
             </nav>
 
             <div class="nav-actions">
+                <div class="theme-toggle" id="theme-toggle" title="Toggle Light/Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </div>
                 <a href="login.html" class="nav-item">Login</a>
                 <a href="register.html" class="btn btn-primary">Sign Up</a>
-                <div class="hamburger" id="mobile-hamburger">
+                <div class="hamburger">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
@@ -49,17 +53,17 @@
 
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu">
-        <div style="margin-top: 50px;">
+        <div class="mobile-menu-content">
             <a href="index.html" class="sidebar-item">Home 1</a>
             <a href="home2.html" class="sidebar-item">Home 2</a>
             <a href="about.html" class="sidebar-item">About</a>
-            <a href="#workshops" class="sidebar-item">Workshops</a>
-            <a href="#gallery" class="sidebar-item">Gallery</a>
-            <a href="#community" class="sidebar-item">Community</a>
+            <a href="services.html" class="sidebar-item">Workshops</a>
+            <a href="services.html" class="sidebar-item">Kits</a>
+            <a href="services.html" class="sidebar-item">Tutorials</a>
             <a href="blog.html" class="sidebar-item">Blog</a>
             <a href="pricing.html" class="sidebar-item">Pricing</a>
             <a href="contact.html" class="sidebar-item">Contact</a>
-            <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+            <hr style="margin: 15px 0; border: 0; border-top: 1px solid var(--border-color);">
             <a href="login.html" class="sidebar-item">Login</a>
             <a href="register.html" class="sidebar-item">Sign Up</a>
         </div>
@@ -75,10 +79,9 @@
             <p class="hero-text animate-on-scroll" data-animation="fade-in-up">Discover the joy of handmade crafts with
                 our expert-led workshops and premium DIY kits.
                 Unleash your creativity in a community of makers.</p>
-            <div class="animate-on-scroll" data-animation="fade-in-up"
-                style="display: flex; gap: 20px; justify-content: center;">
+            <div class="hero-btns animate-on-scroll" data-animation="fade-in-up" style="justify-content: center;">
                 <a href="#workshops" class="btn btn-primary" id="hero-cta-btn">Join a Workshop</a>
-                <a href="services.html" class="btn btn-outline" style="color: white; border-color: white;">Explore
+                <a href="services.html" class="btn btn-outline">Explore
                     Crafts</a>
             </div>
         </div>
@@ -88,7 +91,7 @@
     <section class="section-padding" style="background-color: var(--secondary);">
         <div class="container">
             <div class="about-split">
-                <div class="about-content animate-on-scroll" data-animation="slide-in-left">
+                <div class="about-content animate-on-scroll text-center" data-animation="slide-in-left">
                     <h4 style="color: var(--primary); margin-bottom: 10px;">About the Studio</h4>
                     <h2 class="mb-3">A Sanctuary for Modern Makers & Dreamers</h2>
                     <p class="mb-3">Our DIY Studio is more than just a workspace; it's a creative hub designed to
@@ -96,7 +99,8 @@
                         the tools, space, and guidance you need to bring your ideas to life.</p>
                     <p class="mb-4">From ceramics to textile arts, our curated experiences are designed to help you
                         disconnect from the digital world and reconnect with your hands.</p>
-                    <a href="about.html" class="btn btn-outline">Our Story</a>
+                    <a href="about.html" class="btn btn-outline" style="margin: 0 auto; display: inline-block;">Our
+                        Story</a>
                 </div>
                 <div class="about-image animate-on-scroll" data-animation="slide-in-right">
                     <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?q=80&w=2070&auto=format&fit=crop"
@@ -107,7 +111,7 @@
     </section>
 
     <!-- Featured Workshops Section -->
-    <section id="workshops" class="section-padding" style="background-color: white;">
+    <section id="workshops" class="section-padding" style="background-color: var(--bg-section);">
         <div class="container">
             <div class="text-center mb-5 animate-on-scroll" data-animation="fade-in-up">
                 <h4 style="color: var(--primary);">Workshops</h4>
@@ -165,7 +169,8 @@
                     <div class="card-body">
                         <span class="card-category">Textiles</span>
                         <h3 class="card-title">Modern Wall Weaving</h3>
-                        <p class="mb-3" style="font-size: 14px; color: #666;">Create your own bohemian wall hanging
+                        <p class="mb-3" style="font-size: 14px; color: var(--text-muted);">Create your own bohemian wall
+                            hanging
                             using various textures and fibers.</p>
                         <div class="card-footer">
                             <span class="card-price" style="margin-bottom: 0;">$75.00</span>
@@ -219,7 +224,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="community" class="section-padding" style="background-color: white;">
+    <section id="community" class="section-padding" style="background-color: var(--bg-section);">
         <div class="container">
             <div class="text-center mb-5 animate-on-scroll" data-animation="fade-in-up">
                 <h4 style="color: var(--primary);">Community</h4>
@@ -286,9 +291,8 @@
                 <p>Join our next workshop or get a premium DIY kit delivered to your doorstep. Your creative journey
                     begins here.</p>
                 <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                    <a href="services.html" class="btn btn-primary"
-                        style="background-color: var(--primary); color: white;">Book a Workshop</a>
-                    <a href="services.html" class="btn btn-outline" style="color: white; border-color: white;">Shop DIY
+                    <a href="services.html" class="btn btn-primary">Book a Workshop</a>
+                    <a href="services.html" class="btn btn-outline">Shop DIY
                         Kits</a>
                 </div>
             </div>
@@ -304,7 +308,7 @@
                     <p class="footer-text">Empowering creativity through accessible tools, expert guidance, and a
                         supportive community. Start your journey today.</p>
                     <div style="display: flex; gap: 15px;">
-                        <a href="#" id="footer-ig-link"><i class="fa-brands fa-instagram"
+                        <a href="#"><i class="fa-brands fa-instagram"
                                 style="font-size: 20px; color: var(--tertiary);"></i></a>
                         <a href="#"><i class="fa-brands fa-facebook"
                                 style="font-size: 20px; color: var(--tertiary);"></i></a>
@@ -336,8 +340,8 @@
                 <div>
                     <h4 class="footer-heading">Newsletter</h4>
                     <p class="footer-text">Get fresh DIY ideas and exclusive discounts.</p>
-                    <form class="newsletter-form" id="newsletter-home2">
-                        <input type="email" class="newsletter-input" placeholder="Your email" required>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email">
                         <button type="submit" class="btn btn-primary" style="padding: 12px 20px;"><i
                                 class="fa-solid fa-paper-plane"></i></button>
                     </form>
@@ -354,5 +358,3 @@
 </body>
 
 </html>
-
-

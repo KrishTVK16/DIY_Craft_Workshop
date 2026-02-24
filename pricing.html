@@ -23,6 +23,7 @@
             <a href="index.html" class="logo">
                 <i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio
             </a>
+
             <nav class="nav-menu">
                 <a href="index.html" class="nav-item">Home 1</a>
                 <a href="home2.html" class="nav-item">Home 2</a>
@@ -34,7 +35,12 @@
                 <a href="pricing.html" class="nav-item active">Pricing</a>
                 <a href="contact.html" class="nav-item">Contact</a>
             </nav>
+
             <div class="nav-actions">
+                <div class="theme-toggle" id="theme-toggle" title="Toggle Light/Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </div>
                 <a href="login.html" class="nav-item">Login</a>
                 <a href="register.html" class="btn btn-primary">Sign Up</a>
                 <div class="hamburger">
@@ -46,7 +52,7 @@
 
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu">
-        <div style="margin-top: 50px;">
+        <div class="mobile-menu-content">
             <a href="index.html" class="sidebar-item">Home 1</a>
             <a href="home2.html" class="sidebar-item">Home 2</a>
             <a href="about.html" class="sidebar-item">About</a>
@@ -56,7 +62,7 @@
             <a href="blog.html" class="sidebar-item">Blog</a>
             <a href="pricing.html" class="sidebar-item">Pricing</a>
             <a href="contact.html" class="sidebar-item">Contact</a>
-            <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+            <hr style="margin: 15px 0; border: 0; border-top: 1px solid var(--border-color);">
             <a href="login.html" class="sidebar-item">Login</a>
             <a href="register.html" class="sidebar-item">Sign Up</a>
         </div>
@@ -64,7 +70,7 @@
     <div class="overlay"></div>
 
     <!-- Page Header -->
-    <div class="section-padding text-center" style="background: white;">
+    <div class="section-padding text-center" style="background: var(--bg-section);">
         <div class="container animate-on-scroll" data-animation="fade-in-up">
             <h1 class="mb-2">Choose Your Creative Path</h1>
             <p>Flexible plans for hobbyists, serious crafters, and aspiring professionals.</p>
@@ -78,11 +84,11 @@
 
                 <!-- Starter -->
                 <div class="service-card animate-on-scroll" data-animation="fade-in-up"
-                    style="padding: 40px 30px; border: 1px solid #eee;">
+                    style="padding: 40px 30px; border: 1px solid var(--border-color);">
                     <h3 style="font-size: 24px;">Starter</h3>
                     <p style="color: #666; font-size: 14px; margin-bottom: 20px;">For casual crafters</p>
                     <div style="font-size: 42px; font-weight: 700; color: var(--primary); margin-bottom: 30px;">
-                        $0 <span style="font-size: 16px; color: #666; font-weight: 400;">/ mo</span>
+                        $0 <span style="font-size: 16px; color: var(--text-muted); font-weight: 400;">/ mo</span>
                     </div>
                     <ul style="text-align: left; margin-bottom: 30px; color: #555;">
                         <li class="mb-1"><i class="fa-solid fa-check" style="color: green; margin-right: 10px;"></i>
@@ -99,7 +105,7 @@
 
                 <!-- Creator (Featured) -->
                 <div class="service-card animate-on-scroll" data-animation="fade-in-up"
-                    style="padding: 50px 30px; border: 2px solid var(--primary); transform: scale(1.05); box-shadow: var(--card-shadow); position: relative;">
+                    style="padding: 50px 30px; border: 2px solid var(--primary); transform: scale(1.05); box-shadow: var(--card-shadow); position: relative; overflow: visible;">
                     <div
                         style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary); color: white; padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: 600;">
                         MOST POPULAR</div>
@@ -123,7 +129,7 @@
 
                 <!-- Pro Artist -->
                 <div class="service-card animate-on-scroll" data-animation="fade-in-up"
-                    style="padding: 40px 30px; border: 1px solid #eee;">
+                    style="padding: 40px 30px; border: 1px solid var(--border-color);">
                     <h3 style="font-size: 24px;">Pro Artist</h3>
                     <p style="color: #666; font-size: 14px; margin-bottom: 20px;">For serious makers</p>
                     <div style="font-size: 42px; font-weight: 700; color: var(--primary); margin-bottom: 30px;">
@@ -147,7 +153,7 @@
     </section>
 
     <!-- Comparison Section -->
-    <section class="section-padding" style="background: white;">
+    <section class="section-padding" style="background: var(--bg-section);">
         <div class="container">
             <div class="text-center mb-5 animate-on-scroll" data-animation="fade-in-up">
                 <h2>Compare Plans</h2>
@@ -155,10 +161,11 @@
             </div>
             <div class="table-container shadow-sm animate-on-scroll" data-animation="fade-in-up">
                 <table
-                    style="width: 100%; border-collapse: collapse; background: white; border-radius: 15px; overflow: hidden;">
-                    <thead style="background: #f8f9fa;">
+                    style="width: 100%; border-collapse: collapse; background: var(--bg-card); border-radius: 15px; overflow: hidden;">
+                    <thead style="background: var(--secondary);">
                         <tr>
-                            <th style="padding: 20px; text-align: left; border-bottom: 2px solid #eee;">Feature</th>
+                            <th style="padding: 20px; text-align: left; border-bottom: 2px solid var(--border-color);">
+                                Feature</th>
                             <th style="padding: 20px; text-align: center; border-bottom: 2px solid #eee;">Starter</th>
                             <th style="padding: 20px; text-align: center; border-bottom: 2px solid #eee;">Creator</th>
                             <th style="padding: 20px; text-align: center; border-bottom: 2px solid #eee;">Pro Artist
@@ -191,7 +198,8 @@
                             <td style="padding: 15px 20px; text-align: center; border-bottom: 1px solid #eee;">20%</td>
                         </tr>
                         <tr>
-                            <td style="padding: 15px 20px; border-bottom: 1px solid #eee;">Monthly Workshop</td>
+                            <td style="padding: 15px 20px; border-bottom: 1px solid var(--border-color);">Monthly
+                                Workshop</td>
                             <td style="padding: 15px 20px; text-align: center; border-bottom: 1px solid #eee;"><i
                                     class="fa-solid fa-xmark text-muted"></i></td>
                             <td style="padding: 15px 20px; text-align: center; border-bottom: 1px solid #eee;"><i
@@ -214,15 +222,17 @@
             </div>
             <div style="display: grid; gap: 20px;">
                 <div class="animate-on-scroll" data-animation="fade-in-up"
-                    style="background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.02);">
+                    style="background: var(--bg-card); padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.02);">
                     <h4 class="mb-2">Can I cancel my subscription anytime?</h4>
-                    <p style="color: #666;">Yes, you can cancel or change your plan at any time from your dashboard
+                    <p style="color: var(--text-muted);">Yes, you can cancel or change your plan at any time from your
+                        dashboard
                         settings.</p>
                 </div>
                 <div class="animate-on-scroll" data-animation="fade-in-up"
-                    style="background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.02);">
+                    style="background: var(--bg-card); padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.02);">
                     <h4 class="mb-2">Do the discounts apply to sale items?</h4>
-                    <p style="color: #666;">Member discounts apply to regular priced items and cannot be combined with
+                    <p style="color: var(--text-muted);">Member discounts apply to regular priced items and cannot be
+                        combined with
                         other major promotions.</p>
                 </div>
             </div>
@@ -237,7 +247,7 @@
                 <p>Join thousands of makers and start your 7-day free trial today.</p>
                 <div style="display: flex; gap: 20px; justify-content: center; margin-top: 25px;">
                     <a href="register.html" class="btn btn-primary">Get Started Now</a>
-                    <a href="contact.html" class="btn btn-outline" style="color: white; border-color: white;">Talk to
+                    <a href="contact.html" class="btn btn-outline">Talk to
                         Sales</a>
                 </div>
             </div>
@@ -245,9 +255,55 @@
     </section>
 
     <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
-        <!-- ... -->
         <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2><i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio</h2>
+                    <p class="footer-text">Empowering creativity through accessible tools, expert guidance, and a
+                        supportive community. Start your journey today.</p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#"><i class="fa-brands fa-instagram"
+                                style="font-size: 20px; color: var(--tertiary);"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"
+                                style="font-size: 20px; color: var(--tertiary);"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"
+                                style="font-size: 20px; color: var(--tertiary);"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="footer-text">Get fresh DIY ideas and exclusive discounts.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email">
+                        <button type="submit" class="btn btn-primary" style="padding: 12px 20px;"><i
+                                class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2026 DIY Craft Studio. All rights reserved.</p>
             </div>
@@ -258,5 +314,3 @@
 </body>
 
 </html>
-
-

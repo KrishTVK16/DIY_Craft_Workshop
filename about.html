@@ -37,6 +37,10 @@
             </nav>
 
             <div class="nav-actions">
+                <div class="theme-toggle" id="theme-toggle" title="Toggle Light/Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </div>
                 <a href="login.html" class="nav-item">Login</a>
                 <a href="register.html" class="btn btn-primary">Sign Up</a>
                 <div class="hamburger">
@@ -48,7 +52,7 @@
 
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu">
-        <div style="margin-top: 50px;">
+        <div class="mobile-menu-content">
             <a href="index.html" class="sidebar-item">Home 1</a>
             <a href="home2.html" class="sidebar-item">Home 2</a>
             <a href="about.html" class="sidebar-item">About</a>
@@ -58,7 +62,7 @@
             <a href="blog.html" class="sidebar-item">Blog</a>
             <a href="pricing.html" class="sidebar-item">Pricing</a>
             <a href="contact.html" class="sidebar-item">Contact</a>
-            <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+            <hr style="margin: 15px 0; border: 0; border-top: 1px solid var(--border-color);">
             <a href="login.html" class="sidebar-item">Login</a>
             <a href="register.html" class="sidebar-item">Sign Up</a>
         </div>
@@ -66,7 +70,7 @@
     <div class="overlay"></div>
 
     <!-- Page Header -->
-    <div class="section-padding text-center" style="background: white;">
+    <div class="section-padding text-center" style="background: var(--bg-section);">
         <div class="container animate-on-scroll" data-animation="fade-in-up">
             <h1 style="font-size: 42px; margin-bottom: 20px;">Our Story</h1>
             <p style="max-width: 600px; margin: 0 auto;">We believe everyone has an artist inside them waiting to be
@@ -108,7 +112,7 @@
     </section>
 
     <!-- Team Section -->
-    <section class="section-padding" style="background: white;">
+    <section class="section-padding" style="background: var(--bg-section);">
         <div class="container">
             <div class="text-center mb-5 animate-on-scroll" data-animation="fade-in-up">
                 <h2 class="mb-2">Meet Our Lead Artists</h2>
@@ -126,7 +130,8 @@
                     </div>
                     <h3 class="mb-1" style="font-size: 20px;">Sarah Jenkins</h3>
                     <p style="color: var(--primary); margin-bottom: 10px;">Ceramics Lead</p>
-                    <p style="font-size: 14px; color: #666;">Potter with 10 years of experience turning clay into magic.
+                    <p style="font-size: 14px; color: var(--text-muted);">Potter with 10 years of experience turning
+                        clay into magic.
                     </p>
                 </div>
 
@@ -140,7 +145,8 @@
                     </div>
                     <h3 class="mb-1" style="font-size: 20px;">David Chen</h3>
                     <p style="color: var(--primary); margin-bottom: 10px;">Textile Master</p>
-                    <p style="font-size: 14px; color: #666;">Loves everything from weaving to modern embroidery.</p>
+                    <p style="font-size: 14px; color: var(--text-muted);">Loves everything from weaving to modern
+                        embroidery.</p>
                 </div>
 
                 <!-- Team 3 -->
@@ -153,7 +159,8 @@
                     </div>
                     <h3 class="mb-1" style="font-size: 20px;">Elena Rodriguez</h3>
                     <p style="color: var(--primary); margin-bottom: 10px;">Painting Instructor</p>
-                    <p style="font-size: 14px; color: #666;">Specializes in watercolors and helping beginners let go.
+                    <p style="font-size: 14px; color: var(--text-muted);">Specializes in watercolors and helping
+                        beginners let go.
                     </p>
                 </div>
             </div>
@@ -168,7 +175,8 @@
                 <p>What drives us every single day</p>
             </div>
             <div class="services-grid">
-                <div class="service-card animate-on-scroll" data-animation="fade-in-up" style="background: white;">
+                <div class="service-card animate-on-scroll" data-animation="fade-in-up"
+                    style="background: var(--bg-card);">
                     <i class="fa-solid fa-heart service-icon"></i>
                     <h3>Passion First</h3>
                     <p>We do what we love, and it shows in every kit we produce.</p>
@@ -270,5 +278,3 @@
 </body>
 
 </html>
-
-

@@ -17,58 +17,69 @@
 
 <body style="min-height: 100vh; display: flex; flex-direction: column;">
 
-    <!-- Header (Simplified) -->
-    <header class="header">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio
-            </a>
-            <div class="nav-actions">
-                <span style="font-size: 14px; color: #666; margin-right: 10px;">Already have an account?</span>
-                <a href="login.html" class="btn btn-outline" style="padding: 8px 20px;">Login</a>
-            </div>
-        </div>
-    </header>
+
 
     <!-- Register Form -->
     <div
-        style="flex: 1; display: flex; align-items: center; justify-content: center; background: #f9f9f9; padding: 40px 20px;">
+        style="flex: 1; display: flex; align-items: center; justify-content: center; background: var(--secondary); padding: 20px;">
         <div class="animate-on-scroll" data-animation="fade-in-up"
-            style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--card-shadow); max-width: 400px; width: 100%;">
+            style="background: var(--bg-card); padding: 30px 25px; border-radius: 20px; box-shadow: var(--card-shadow); max-width: 400px; width: 100%;">
+
             <div class="text-center mb-4">
-                <h2 style="margin-bottom: 10px;">Create Account</h2>
-                <p style="color: #666;">Join our community of makers today.</p>
+                <a href="index.html" class="logo" style="justify-content: center; margin-bottom: 20px;">
+                    <i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio
+                </a>
+                <h2 style="margin-bottom: 20px; font-size: 24px;">Create Account</h2>
             </div>
 
             <form action="dashboard.html">
                 <div class="mb-3">
-                    <label style="display: block; margin-bottom: 8px; font-weight: 500;">Full Name</label>
+                    <label style="display: block; margin-bottom: 6px; font-weight: 500; font-size: 14px;">Full
+                        Name</label>
                     <input type="text" placeholder="John Doe"
-                        style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 10px; outline: none;">
+                        style="width: 100%; padding: 10px 12px; border: 1px solid var(--border-color); background: var(--bg-input); color: var(--tertiary); border-radius: 10px; outline: none; font-size: 14px;">
                 </div>
 
                 <div class="mb-3">
-                    <label style="display: block; margin-bottom: 8px; font-weight: 500;">Email</label>
+                    <label style="display: block; margin-bottom: 6px; font-weight: 500; font-size: 14px;">Email</label>
                     <input type="email" placeholder="john@example.com"
-                        style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 10px; outline: none;">
-                </div>
-
-                <div class="mb-3">
-                    <label style="display: block; margin-bottom: 8px; font-weight: 500;">Password</label>
-                    <input type="password" placeholder="••••••••"
-                        style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 10px; outline: none;">
+                        style="width: 100%; padding: 10px 12px; border: 1px solid var(--border-color); background: var(--bg-input); color: var(--tertiary); border-radius: 10px; outline: none; font-size: 14px;">
                 </div>
 
                 <div class="mb-3">
                     <label
-                        style="cursor: pointer; display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #666;">
-                        <input type="checkbox" style="margin-top: 5px;">
+                        style="display: block; margin-bottom: 6px; font-weight: 500; font-size: 14px;">Password</label>
+                    <input type="password" placeholder="••••••••"
+                        style="width: 100%; padding: 10px 12px; border: 1px solid var(--border-color); background: var(--bg-input); color: var(--tertiary); border-radius: 10px; outline: none; font-size: 14px;">
+                </div>
+
+                <div class="mb-3">
+                    <label
+                        style="cursor: pointer; display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: var(--text-muted);">
+                        <input type="checkbox" style="margin-top: 3px;">
                         I agree to the Terms of Service and Privacy Policy
                     </label>
                 </div>
 
-                <button type="submit" class="btn btn-primary" style="width: 100%;">Sign Up</button>
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px;">Sign Up</button>
             </form>
+
+            <div class="text-center">
+                <div style="display: flex; align-items: center; margin: 25px 0 20px;">
+                    <hr style="flex: 1; border: 0; border-top: 1px solid var(--border-color);">
+                    <span style="padding: 0 10px; color: var(--text-muted); font-size: 12px; font-weight: 500;">OR
+                        CONTINUE WITH</span>
+                    <hr style="flex: 1; border: 0; border-top: 1px solid var(--border-color);">
+                </div>
+
+                <div style="display: flex; gap: 12px; justify-content: center; margin-bottom: 20px;">
+                    <button class="btn-social btn-google"><i class="fa-brands fa-google"></i></button>
+                    <button class="btn-social btn-facebook"><i class="fa-brands fa-facebook-f"></i></button>
+                </div>
+
+                <p style="font-size: 14px; color: var(--text-muted);">Already have an account? <a href="login.html"
+                        style="color: var(--primary); font-weight: 600;">Login</a></p>
+            </div>
         </div>
     </div>
 
@@ -76,5 +87,3 @@
 </body>
 
 </html>
-
-

@@ -15,28 +15,138 @@
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 
-<body
-    style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; background: var(--secondary);">
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
 
-    <div class="animate-on-scroll" data-animation="fade-in-up"
-        style="background: white; padding: 50px; border-radius: 20px; box-shadow: var(--card-shadow); max-width: 600px; width: 100%;">
-        <i class="fa-solid fa-paintbrush" style="font-size: 60px; color: var(--primary); margin-bottom: 20px;"></i>
-        <h1 class="mb-2">Something Creative is Brewing!</h1>
-        <p class="mb-4" style="color: #666;">We are working hard to bring you this new feature. Stay tuned for updates.
-        </p>
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio
+            </a>
 
-        <form style="display: flex; gap: 10px; max-width: 400px; margin: 0 auto 30px;">
-            <input type="email" placeholder="Enter your email"
-                style="flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 50px; outline: none;">
-            <button class="btn btn-primary" style="border-radius: 50px;">Notify Me</button>
-        </form>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Home 1</a>
+                <a href="home2.html" class="nav-item">Home 2</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="services.html" class="nav-item">Workshops</a>
+                <a href="services.html" class="nav-item">Kits</a>
+                <a href="services.html" class="nav-item">Tutorials</a>
+                <a href="blog.html" class="nav-item">Blog</a>
+                <a href="pricing.html" class="nav-item">Pricing</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </nav>
 
-        <a href="index.html" style="color: var(--primary); font-weight: 600;">&larr; Back to Home 1</a>
+            <div class="nav-actions">
+                <div class="theme-toggle" id="theme-toggle" title="Toggle Light/Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+                <a href="login.html" class="nav-item">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="index.html" class="sidebar-item">Home 1</a>
+            <a href="home2.html" class="sidebar-item">Home 2</a>
+            <a href="about.html" class="sidebar-item">About</a>
+            <a href="services.html" class="sidebar-item">Workshops</a>
+            <a href="services.html" class="sidebar-item">Kits</a>
+            <a href="services.html" class="sidebar-item">Tutorials</a>
+            <a href="blog.html" class="sidebar-item">Blog</a>
+            <a href="pricing.html" class="sidebar-item">Pricing</a>
+            <a href="contact.html" class="sidebar-item">Contact</a>
+            <hr style="margin: 15px 0; border: 0; border-top: 1px solid var(--border-color);">
+            <a href="login.html" class="sidebar-item">Login</a>
+            <a href="register.html" class="sidebar-item">Sign Up</a>
+        </div>
     </div>
+    <div class="overlay"></div>
+
+    <!-- Main Content -->
+    <main
+        style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 60px 20px; background: var(--secondary);">
+        <div class="animate-on-scroll" data-animation="fade-in-up"
+            style="background: var(--bg-card); padding: 50px; border-radius: 20px; box-shadow: var(--card-shadow); max-width: 600px; width: 100%;">
+            <i class="fa-solid fa-paintbrush" style="font-size: 60px; color: var(--primary); margin-bottom: 20px;"></i>
+            <h1 class="mb-2">Something Creative is Brewing!</h1>
+            <p class="mb-4" style="color: var(--text-muted);">We are working hard to bring you this new feature. Stay
+                tuned for
+                updates.
+            </p>
+
+            <form style="display: flex; gap: 10px; max-width: 400px; margin: 0 auto 30px;">
+                <input type="email" placeholder="Enter your email"
+                    style="flex: 1; padding: 12px; border: 1px solid var(--border-color); background: var(--bg-input); color: var(--tertiary); border-radius: 50px; outline: none;">
+                <button class="btn btn-primary" style="border-radius: 50px;">Notify Me</button>
+            </form>
+
+            <a href="index.html" style="color: var(--primary); font-weight: 600;">&larr; Back to Home 1</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2><i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio</h2>
+                    <p class="footer-text">Empowering creativity through accessible tools, expert guidance, and a
+                        supportive community. Start your journey today.</p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#"><i class="fa-brands fa-instagram"
+                                style="font-size: 20px; color: var(--tertiary);"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"
+                                style="font-size: 20px; color: var(--tertiary);"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"
+                                style="font-size: 20px; color: var(--tertiary);"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="footer-text">Get fresh DIY ideas and exclusive discounts.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email">
+                        <button type="submit" class="btn btn-primary" style="padding: 12px 20px;"><i
+                                class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 DIY Craft Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="assets/js/main.js"></script>
 </body>
 
 </html>
-
-

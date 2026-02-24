@@ -23,6 +23,7 @@
             <a href="index.html" class="logo">
                 <i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio
             </a>
+
             <nav class="nav-menu">
                 <a href="index.html" class="nav-item">Home 1</a>
                 <a href="home2.html" class="nav-item">Home 2</a>
@@ -34,7 +35,12 @@
                 <a href="pricing.html" class="nav-item">Pricing</a>
                 <a href="contact.html" class="nav-item">Contact</a>
             </nav>
+
             <div class="nav-actions">
+                <div class="theme-toggle" id="theme-toggle" title="Toggle Light/Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </div>
                 <a href="login.html" class="nav-item">Login</a>
                 <a href="register.html" class="btn btn-primary">Sign Up</a>
                 <div class="hamburger">
@@ -46,8 +52,7 @@
 
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu">
-        <!-- ... -->
-        <div style="margin-top: 50px;">
+        <div class="mobile-menu-content">
             <a href="index.html" class="sidebar-item">Home 1</a>
             <a href="home2.html" class="sidebar-item">Home 2</a>
             <a href="about.html" class="sidebar-item">About</a>
@@ -57,14 +62,14 @@
             <a href="blog.html" class="sidebar-item">Blog</a>
             <a href="pricing.html" class="sidebar-item">Pricing</a>
             <a href="contact.html" class="sidebar-item">Contact</a>
-            <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+            <hr style="margin: 15px 0; border: 0; border-top: 1px solid var(--border-color);">
             <a href="login.html" class="sidebar-item">Login</a>
             <a href="register.html" class="sidebar-item">Sign Up</a>
         </div>
     </div>
     <div class="overlay"></div>
 
-    <div class="section-padding text-center" style="background: white;">
+    <div class="section-padding text-center" style="background: var(--bg-section);">
         <div class="container animate-on-scroll" data-animation="fade-in-up">
             <h1 class="mb-2">Crafting Journal</h1>
             <p>Tips, tutorials, and inspiration from our community</p>
@@ -175,9 +180,9 @@
                 first access to new kits.</p>
             <form style="max-width: 500px; margin: 0 auto; display: flex; gap: 10px;">
                 <input type="email" placeholder="Your best email"
-                    style="flex: 1; padding: 15px; border-radius: 10px; border: none; outline: none;">
+                    style="flex: 1; padding: 15px; border-radius: 10px; border: none; background: var(--bg-input); color: var(--tertiary); outline: none;">
                 <button class="btn"
-                    style="background: white; color: var(--primary); font-weight: 700;">Subscribe</button>
+                    style="background: var(--bg-card); color: var(--primary); font-weight: 700;">Subscribe</button>
             </form>
         </div>
     </section>
@@ -190,15 +195,61 @@
                 <p>Browse our collection of kits or join a live workshop today.</p>
                 <div style="display: flex; gap: 20px; justify-content: center; margin-top: 25px;">
                     <a href="services.html" class="btn btn-primary">Browse Shop</a>
-                    <a href="contact.html" class="btn btn-outline" style="color: white; border-color: white;">Contact
+                    <a href="contact.html" class="btn btn-outline">Contact
                         Us</a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Footer -->
     <footer class="footer">
-        <!-- ... -->
         <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2><i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio</h2>
+                    <p class="footer-text">Empowering creativity through accessible tools, expert guidance, and a
+                        supportive community. Start your journey today.</p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#"><i class="fa-brands fa-instagram"
+                                style="font-size: 20px; color: var(--tertiary);"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"
+                                style="font-size: 20px; color: var(--tertiary);"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"
+                                style="font-size: 20px; color: var(--tertiary);"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="footer-text">Get fresh DIY ideas and exclusive discounts.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email">
+                        <button type="submit" class="btn btn-primary" style="padding: 12px 20px;"><i
+                                class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2026 DIY Craft Studio. All rights reserved.</p>
             </div>
@@ -209,5 +260,3 @@
 </body>
 
 </html>
-
-

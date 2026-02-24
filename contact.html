@@ -23,6 +23,7 @@
             <a href="index.html" class="logo">
                 <i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio
             </a>
+
             <nav class="nav-menu">
                 <a href="index.html" class="nav-item">Home 1</a>
                 <a href="home2.html" class="nav-item">Home 2</a>
@@ -34,7 +35,12 @@
                 <a href="pricing.html" class="nav-item">Pricing</a>
                 <a href="contact.html" class="nav-item active">Contact</a>
             </nav>
+
             <div class="nav-actions">
+                <div class="theme-toggle" id="theme-toggle" title="Toggle Light/Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </div>
                 <a href="login.html" class="nav-item">Login</a>
                 <a href="register.html" class="btn btn-primary">Sign Up</a>
                 <div class="hamburger">
@@ -46,7 +52,7 @@
 
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu">
-        <div style="margin-top: 50px;">
+        <div class="mobile-menu-content">
             <a href="index.html" class="sidebar-item">Home 1</a>
             <a href="home2.html" class="sidebar-item">Home 2</a>
             <a href="about.html" class="sidebar-item">About</a>
@@ -56,7 +62,7 @@
             <a href="blog.html" class="sidebar-item">Blog</a>
             <a href="pricing.html" class="sidebar-item">Pricing</a>
             <a href="contact.html" class="sidebar-item">Contact</a>
-            <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+            <hr style="margin: 15px 0; border: 0; border-top: 1px solid var(--border-color);">
             <a href="login.html" class="sidebar-item">Login</a>
             <a href="register.html" class="sidebar-item">Sign Up</a>
         </div>
@@ -64,7 +70,7 @@
     <div class="overlay"></div>
 
     <!-- Page Header -->
-    <div class="section-padding text-center" style="background: white;">
+    <div class="section-padding text-center" style="background: var(--bg-section);">
         <div class="container animate-on-scroll" data-animation="fade-in-up">
             <h1 class="mb-2">Get in Touch</h1>
             <p>Have questions about a kit or workshop? We're here to help.</p>
@@ -117,7 +123,7 @@
                 <!-- Contact Form -->
                 <div class="animate-on-scroll" data-animation="slide-in-right" style="flex: 1; min-width: 300px;">
                     <form
-                        style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--card-shadow);">
+                        style="background: var(--bg-card); padding: 40px; border-radius: 20px; box-shadow: var(--card-shadow);">
                         <h3 class="mb-4">Send a Message</h3>
 
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
@@ -153,17 +159,17 @@
         </div>
     </section>
 
-    <!-- Map Placeholder -->
-    <div
-        style="height: 400px; background: #eee; display: flex; align-items: center; justify-content: center; color: #888;">
-        <div class="animate-on-scroll" data-animation="fade-in-up" style="text-align: center;">
-            <i class="fa-solid fa-map-location-dot" style="font-size: 48px; margin-bottom: 20px;"></i>
-            <h3>Google Map Embed Would Go Here</h3>
-        </div>
+    <!-- Map Section -->
+    <div style="height: 450px; width: 100%; overflow: hidden;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.2528082187!2d-74.11976373946229!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1684334345678!5m2!1sen!2s"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </div>
 
     <!-- FAQ Section -->
-    <section class="section-padding" style="background: white;">
+    <section class="section-padding" style="background: var(--bg-section);">
         <div class="container" style="max-width: 800px;">
             <div class="text-center mb-5 animate-on-scroll" data-animation="fade-in-up">
                 <h2>Quick Answers</h2>
@@ -189,7 +195,7 @@
         <div class="container text-center">
             <h2 class="mb-4 animate-on-scroll" data-animation="fade-in-up">Studio Hours</h2>
             <div class="animate-on-scroll" data-animation="fade-in-up"
-                style="display: inline-block; text-align: left; background: white; padding: 30px; border-radius: 20px; box-shadow: var(--card-shadow);">
+                style="display: inline-block; text-align: left; background: var(--bg-card); padding: 30px; border-radius: 20px; box-shadow: var(--card-shadow);">
                 <div
                     style="display: flex; gap: 50px; margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
                     <span style="font-weight: 600; min-width: 100px;">Mon - Fri</span>
@@ -214,16 +220,63 @@
             <div class="cta-box animate-on-scroll" data-animation="fade-in-up">
                 <h2>Looking for Workshops?</h2>
                 <p>Check out our upcoming schedule and book your spot today.</p>
-                <a href="services.html" class="btn btn-primary" style="background: white; color: var(--primary);">View
+                <a href="services.html" class="btn btn-primary"
+                    style="background: var(--bg-card); color: var(--primary);">View
                     Schedule</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
-        <!-- ... -->
         <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2><i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio</h2>
+                    <p class="footer-text">Empowering creativity through accessible tools, expert guidance, and a
+                        supportive community. Start your journey today.</p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#"><i class="fa-brands fa-instagram"
+                                style="font-size: 20px; color: var(--tertiary);"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"
+                                style="font-size: 20px; color: var(--tertiary);"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"
+                                style="font-size: 20px; color: var(--tertiary);"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="footer-text">Get fresh DIY ideas and exclusive discounts.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email">
+                        <button type="submit" class="btn btn-primary" style="padding: 12px 20px;"><i
+                                class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2026 DIY Craft Studio. All rights reserved.</p>
             </div>
@@ -234,5 +287,3 @@
 </body>
 
 </html>
-
-

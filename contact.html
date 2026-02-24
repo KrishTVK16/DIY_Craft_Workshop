@@ -7,6 +7,12 @@
     <title>Contact Us - DIY Craft Studio</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
@@ -18,8 +24,12 @@
                 <i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio
             </a>
             <nav class="nav-menu">
-                <a href="index.html" class="nav-item">Home</a>
-                <a href="services.html" class="nav-item">Services</a>
+                <a href="index.html" class="nav-item">Home 1</a>
+                <a href="home2.html" class="nav-item">Home 2</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="services.html" class="nav-item">Workshops</a>
+                <a href="services.html" class="nav-item">Kits</a>
+                <a href="services.html" class="nav-item">Tutorials</a>
                 <a href="blog.html" class="nav-item">Blog</a>
                 <a href="pricing.html" class="nav-item">Pricing</a>
                 <a href="contact.html" class="nav-item active">Contact</a>
@@ -37,15 +47,25 @@
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu">
         <div style="margin-top: 50px;">
-            <!-- ... -->
+            <a href="index.html" class="sidebar-item">Home 1</a>
+            <a href="home2.html" class="sidebar-item">Home 2</a>
+            <a href="about.html" class="sidebar-item">About</a>
+            <a href="services.html" class="sidebar-item">Workshops</a>
+            <a href="services.html" class="sidebar-item">Kits</a>
+            <a href="services.html" class="sidebar-item">Tutorials</a>
+            <a href="blog.html" class="sidebar-item">Blog</a>
+            <a href="pricing.html" class="sidebar-item">Pricing</a>
             <a href="contact.html" class="sidebar-item">Contact</a>
+            <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+            <a href="login.html" class="sidebar-item">Login</a>
+            <a href="register.html" class="sidebar-item">Sign Up</a>
         </div>
     </div>
     <div class="overlay"></div>
 
     <!-- Page Header -->
     <div class="section-padding text-center" style="background: white;">
-        <div class="container">
+        <div class="container animate-on-scroll" data-animation="fade-in-up">
             <h1 class="mb-2">Get in Touch</h1>
             <p>Have questions about a kit or workshop? We're here to help.</p>
         </div>
@@ -57,7 +77,7 @@
             <div style="display: flex; gap: 50px; flex-wrap: wrap;">
 
                 <!-- Contact Info -->
-                <div style="flex: 1; min-width: 300px;">
+                <div class="animate-on-scroll" data-animation="slide-in-left" style="flex: 1; min-width: 300px;">
                     <div class="service-card" style="text-align: left; margin-bottom: 30px;">
                         <div style="display: flex; gap: 20px; margin-bottom: 30px;">
                             <div
@@ -95,7 +115,7 @@
                 </div>
 
                 <!-- Contact Form -->
-                <div style="flex: 1; min-width: 300px;">
+                <div class="animate-on-scroll" data-animation="slide-in-right" style="flex: 1; min-width: 300px;">
                     <form
                         style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--card-shadow);">
                         <h3 class="mb-4">Send a Message</h3>
@@ -136,11 +156,69 @@
     <!-- Map Placeholder -->
     <div
         style="height: 400px; background: #eee; display: flex; align-items: center; justify-content: center; color: #888;">
-        <div style="text-align: center;">
+        <div class="animate-on-scroll" data-animation="fade-in-up" style="text-align: center;">
             <i class="fa-solid fa-map-location-dot" style="font-size: 48px; margin-bottom: 20px;"></i>
             <h3>Google Map Embed Would Go Here</h3>
         </div>
     </div>
+
+    <!-- FAQ Section -->
+    <section class="section-padding" style="background: white;">
+        <div class="container" style="max-width: 800px;">
+            <div class="text-center mb-5 animate-on-scroll" data-animation="fade-in-up">
+                <h2>Quick Answers</h2>
+                <p>Common questions before you reach out</p>
+            </div>
+            <div style="display: grid; gap: 20px;">
+                <div class="animate-on-scroll" data-animation="fade-in-up"
+                    style="padding: 20px; border: 1px solid #eee; border-radius: 10px;">
+                    <h4 class="mb-2">Do I need to bring anything to a workshop?</h4>
+                    <p style="color: #666;">No, we provide all materials and equipment needed for every class!</p>
+                </div>
+                <div class="animate-on-scroll" data-animation="fade-in-up"
+                    style="padding: 20px; border: 1px solid #eee; border-radius: 10px;">
+                    <h4 class="mb-2">How long does shipping take for kits?</h4>
+                    <p style="color: #666;">Typically 3-5 business days within the country.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Studio Hours -->
+    <section class="section-padding" style="background: var(--secondary);">
+        <div class="container text-center">
+            <h2 class="mb-4 animate-on-scroll" data-animation="fade-in-up">Studio Hours</h2>
+            <div class="animate-on-scroll" data-animation="fade-in-up"
+                style="display: inline-block; text-align: left; background: white; padding: 30px; border-radius: 20px; box-shadow: var(--card-shadow);">
+                <div
+                    style="display: flex; gap: 50px; margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+                    <span style="font-weight: 600; min-width: 100px;">Mon - Fri</span>
+                    <span>9:00 AM - 7:00 PM</span>
+                </div>
+                <div
+                    style="display: flex; gap: 50px; margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+                    <span style="font-weight: 600; min-width: 100px;">Saturday</span>
+                    <span>10:00 AM - 6:00 PM</span>
+                </div>
+                <div style="display: flex; gap: 50px;">
+                    <span style="font-weight: 600; min-width: 100px;">Sunday</span>
+                    <span style="color: #888;">Closed for Private Events</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="cta-box animate-on-scroll" data-animation="fade-in-up">
+                <h2>Looking for Workshops?</h2>
+                <p>Check out our upcoming schedule and book your spot today.</p>
+                <a href="services.html" class="btn btn-primary" style="background: white; color: var(--primary);">View
+                    Schedule</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -156,3 +234,5 @@
 </body>
 
 </html>
+
+

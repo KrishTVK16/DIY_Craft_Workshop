@@ -7,6 +7,12 @@
     <title>Blog - DIY Craft Studio</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
@@ -18,8 +24,12 @@
                 <i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio
             </a>
             <nav class="nav-menu">
-                <a href="index.html" class="nav-item">Home</a>
-                <a href="services.html" class="nav-item">Services</a>
+                <a href="index.html" class="nav-item">Home 1</a>
+                <a href="home2.html" class="nav-item">Home 2</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="services.html" class="nav-item">Workshops</a>
+                <a href="services.html" class="nav-item">Kits</a>
+                <a href="services.html" class="nav-item">Tutorials</a>
                 <a href="blog.html" class="nav-item active">Blog</a>
                 <a href="pricing.html" class="nav-item">Pricing</a>
                 <a href="contact.html" class="nav-item">Contact</a>
@@ -38,26 +48,52 @@
     <div class="mobile-menu">
         <!-- ... -->
         <div style="margin-top: 50px;">
-            <a href="index.html" class="sidebar-item">Home</a>
+            <a href="index.html" class="sidebar-item">Home 1</a>
+            <a href="home2.html" class="sidebar-item">Home 2</a>
+            <a href="about.html" class="sidebar-item">About</a>
+            <a href="services.html" class="sidebar-item">Workshops</a>
+            <a href="services.html" class="sidebar-item">Kits</a>
+            <a href="services.html" class="sidebar-item">Tutorials</a>
             <a href="blog.html" class="sidebar-item">Blog</a>
-            <!-- ... -->
+            <a href="pricing.html" class="sidebar-item">Pricing</a>
+            <a href="contact.html" class="sidebar-item">Contact</a>
+            <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+            <a href="login.html" class="sidebar-item">Login</a>
+            <a href="register.html" class="sidebar-item">Sign Up</a>
         </div>
     </div>
     <div class="overlay"></div>
 
-    <!-- Page Header -->
     <div class="section-padding text-center" style="background: white;">
-        <div class="container">
+        <div class="container animate-on-scroll" data-animation="fade-in-up">
             <h1 class="mb-2">Crafting Journal</h1>
             <p>Tips, tutorials, and inspiration from our community</p>
         </div>
     </div>
 
+    <!-- Featured Post -->
+    <section class="container mb-5 animate-on-scroll" data-animation="fade-in-up">
+        <div
+            style="background: var(--secondary); border-radius: 20px; overflow: hidden; display: flex; flex-wrap: wrap; align-items: center;">
+            <div style="flex: 1; min-width: 300px; height: 400px;">
+                <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=800"
+                    alt="New Painting Techniques" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="flex: 1; min-width: 300px; padding: 50px;">
+                <span style="color: var(--primary); font-weight: 600;">FEATURED ARTICLE</span>
+                <h2 style="font-size: 32px; margin: 15px 0;">Mastering Color Theory in Your DIY Projects</h2>
+                <p style="color: #666; margin-bottom: 25px;">Learn how to pick the perfect palette for your next
+                    embroidery or painting project with our comprehensive guide.</p>
+                <a href="blog-details.html" class="btn btn-primary">Read Article</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Blog Grid -->
     <section class="section-padding">
         <div class="container">
-            <div
-                style="display: flex; justify-content: space-between; margin-bottom: 40px; flex-wrap: wrap; gap: 20px;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 40px; flex-wrap: wrap; gap: 20px;"
+                class="animate-on-scroll" data-animation="fade-in-up">
                 <!-- Filter -->
                 <div style="display: flex; gap: 10px;">
                     <button class="btn btn-primary">All</button>
@@ -76,10 +112,11 @@
 
             <div class="card-grid">
                 <!-- Blog 1 -->
-                <div class="product-card" style="border: none; box-shadow: none; background: transparent;">
+                <div class="product-card animate-on-scroll" data-animation="fade-in-up"
+                    style="border: none; box-shadow: none; background: transparent;">
                     <div class="card-img" style="border-radius: 15px; overflow: hidden; margin-bottom: 20px;">
                         <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Blog 1">
+                            alt="Pottery tools and raw clay on a workbench">
                     </div>
                     <div>
                         <span style="color: var(--primary); font-weight: 600; font-size: 13px;">TUTORIAL</span>
@@ -93,10 +130,11 @@
                 </div>
 
                 <!-- Blog 2 -->
-                <div class="product-card" style="border: none; box-shadow: none; background: transparent;">
+                <div class="product-card animate-on-scroll" data-animation="fade-in-up"
+                    style="border: none; box-shadow: none; background: transparent;">
                     <div class="card-img" style="border-radius: 15px; overflow: hidden; margin-bottom: 20px;">
                         <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Blog 2">
+                            alt="Beautifully wrapped handmade gift box with ribbon">
                     </div>
                     <div>
                         <span style="color: var(--primary); font-weight: 600; font-size: 13px;">INSPIRATION</span>
@@ -109,10 +147,11 @@
                 </div>
 
                 <!-- Blog 3 -->
-                <div class="product-card" style="border: none; box-shadow: none; background: transparent;">
+                <div class="product-card animate-on-scroll" data-animation="fade-in-up"
+                    style="border: none; box-shadow: none; background: transparent;">
                     <div class="card-img" style="border-radius: 15px; overflow: hidden; margin-bottom: 20px;">
                         <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Blog 3">
+                            alt="Artist Sarah Jenkins working on a ceramic vase in her studio">
                     </div>
                     <div>
                         <span style="color: var(--primary); font-weight: 600; font-size: 13px;">COMMUNITY</span>
@@ -127,7 +166,36 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Mid-Blog CTA -->
+    <section class="section-padding animate-on-scroll" data-animation="fade-in-up"
+        style="background: var(--primary); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="color: white; margin-bottom: 20px;">Want More Inspiration?</h2>
+            <p style="margin-bottom: 30px; opacity: 0.9;">Subscribe to our weekly newsletter for exclusive tips and
+                first access to new kits.</p>
+            <form style="max-width: 500px; margin: 0 auto; display: flex; gap: 10px;">
+                <input type="email" placeholder="Your best email"
+                    style="flex: 1; padding: 15px; border-radius: 10px; border: none; outline: none;">
+                <button class="btn"
+                    style="background: white; color: var(--primary); font-weight: 700;">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="cta-box animate-on-scroll" data-animation="fade-in-up">
+                <h2>Ready to Start Your Journey?</h2>
+                <p>Browse our collection of kits or join a live workshop today.</p>
+                <div style="display: flex; gap: 20px; justify-content: center; margin-top: 25px;">
+                    <a href="services.html" class="btn btn-primary">Browse Shop</a>
+                    <a href="contact.html" class="btn btn-outline" style="color: white; border-color: white;">Contact
+                        Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <!-- ... -->
         <div class="container">
@@ -141,3 +209,5 @@
 </body>
 
 </html>
+
+

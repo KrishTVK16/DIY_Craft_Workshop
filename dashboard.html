@@ -7,6 +7,12 @@
     <title>Admin Dashboard - DIY Craft Studio</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body style="background: #fcfeff;">
@@ -65,28 +71,28 @@
 
             <!-- Tab 1: Analytics -->
             <div id="analytics" class="tab-content active">
-                <h2 class="mb-4">Dashboard Overview</h2>
+                <h2 class="mb-4 animate-on-scroll" data-animation="fade-in-up">Dashboard Overview</h2>
 
                 <div class="stat-grid">
-                    <div class="stat-card">
+                    <div class="stat-card animate-on-scroll" data-animation="fade-in-up">
                         <div class="stat-title">Total Revenue</div>
                         <div class="stat-value">$24,500</div>
                         <div style="color: #28a745; font-size: 13px; margin-top: 5px;"><i
                                 class="fa-solid fa-arrow-up"></i> 12% from last month</div>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card animate-on-scroll" data-animation="fade-in-up">
                         <div class="stat-title">Start Kits Sold</div>
                         <div class="stat-value">1,250</div>
                         <div style="color: #28a745; font-size: 13px; margin-top: 5px;"><i
                                 class="fa-solid fa-arrow-up"></i> 8% from last month</div>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card animate-on-scroll" data-animation="fade-in-up">
                         <div class="stat-title">Active Students</div>
                         <div class="stat-value">845</div>
                         <div style="color: #28a745; font-size: 13px; margin-top: 5px;"><i
                                 class="fa-solid fa-arrow-up"></i> 15% from last month</div>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card animate-on-scroll" data-animation="fade-in-up">
                         <div class="stat-title">Workshops Booked</div>
                         <div class="stat-value">320</div>
                         <div style="color: #ffa000; font-size: 13px; margin-top: 5px;"><i class="fa-solid fa-minus"></i>
@@ -94,8 +100,8 @@
                     </div>
                 </div>
 
-                <div
-                    style="background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+                <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);"
+                    class="animate-on-scroll" data-animation="fade-in-up">
                     <h3 class="mb-3">Recent Activity</h3>
                     <p style="color: #666; font-style: italic;">Chart placeholder (Total Sales vs Kits Sold)</p>
                     <div
@@ -107,8 +113,8 @@
 
             <!-- Tab 2: Users -->
             <div id="users" class="tab-content">
-                <h2 class="mb-4">User Management</h2>
-                <div class="table-container">
+                <h2 class="mb-4 animate-on-scroll" data-animation="fade-in-up">User Management</h2>
+                <div class="table-container animate-on-scroll" data-animation="fade-in-up">
                     <table>
                         <thead>
                             <tr>
@@ -148,8 +154,8 @@
 
             <!-- Tab 3: Orders -->
             <div id="orders" class="tab-content">
-                <h2 class="mb-4">Recent Orders</h2>
-                <div class="table-container">
+                <h2 class="mb-4 animate-on-scroll" data-animation="fade-in-up">Recent Orders</h2>
+                <div class="table-container animate-on-scroll" data-animation="fade-in-up">
                     <table>
                         <thead>
                             <tr>
@@ -189,8 +195,8 @@
 
             <!-- Tab 4: Messages -->
             <div id="messages" class="tab-content">
-                <h2 class="mb-4">Inbox</h2>
-                <div class="table-container">
+                <h2 class="mb-4 animate-on-scroll" data-animation="fade-in-up">Inbox</h2>
+                <div class="table-container animate-on-scroll" data-animation="fade-in-up">
                     <div style="display: flex; flex-direction: column; gap: 15px;">
                         <div style="border-bottom: 1px solid #eee; padding-bottom: 15px;">
                             <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
@@ -225,7 +231,10 @@
         </main>
     </div>
 
+    <script src="assets/js/main.js"></script>
     <script src="assets/js/dashboard.js"></script>
 </body>
 
 </html>
+
+

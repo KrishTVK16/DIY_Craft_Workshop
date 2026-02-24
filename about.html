@@ -7,6 +7,12 @@
     <title>About Us - DIY Craft Studio</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
@@ -19,7 +25,9 @@
             </a>
 
             <nav class="nav-menu">
-                <a href="index.html" class="nav-item">Home</a>
+                <a href="index.html" class="nav-item">Home 1</a>
+                <a href="home2.html" class="nav-item">Home 2</a>
+                <a href="about.html" class="nav-item active">About</a>
                 <a href="services.html" class="nav-item">Workshops</a>
                 <a href="services.html" class="nav-item">Kits</a>
                 <a href="services.html" class="nav-item">Tutorials</a>
@@ -41,7 +49,9 @@
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu">
         <div style="margin-top: 50px;">
-            <a href="index.html" class="sidebar-item">Home</a>
+            <a href="index.html" class="sidebar-item">Home 1</a>
+            <a href="home2.html" class="sidebar-item">Home 2</a>
+            <a href="about.html" class="sidebar-item">About</a>
             <a href="services.html" class="sidebar-item">Workshops</a>
             <a href="services.html" class="sidebar-item">Kits</a>
             <a href="services.html" class="sidebar-item">Tutorials</a>
@@ -57,7 +67,7 @@
 
     <!-- Page Header -->
     <div class="section-padding text-center" style="background: white;">
-        <div class="container">
+        <div class="container animate-on-scroll" data-animation="fade-in-up">
             <h1 style="font-size: 42px; margin-bottom: 20px;">Our Story</h1>
             <p style="max-width: 600px; margin: 0 auto;">We believe everyone has an artist inside them waiting to be
                 discovered. Our mission is to make creativity accessible, fun, and simpler than ever.</p>
@@ -68,11 +78,12 @@
     <section class="section-padding">
         <div class="container">
             <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 50px;">
-                <div style="flex: 1; min-width: 300px;">
+                <div class="animate-on-scroll" data-animation="slide-in-left" style="flex: 1; min-width: 300px;">
                     <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Our Studio" style="border-radius: 20px; box-shadow: var(--card-shadow);">
+                        alt="Bright and airy DIY Craft Studio production workspace with communal tables"
+                        style="border-radius: 20px; box-shadow: var(--card-shadow);">
                 </div>
-                <div style="flex: 1; min-width: 300px;">
+                <div class="animate-on-scroll" data-animation="slide-in-right" style="flex: 1; min-width: 300px;">
                     <h4 style="color: var(--primary);">Who We Are</h4>
                     <h2 class="mb-3">Crafting a Community of Makers</h2>
                     <p class="mb-3">Started in 2024 as a small local workshop, DIY Craft Studio has grown into a global
@@ -99,18 +110,19 @@
     <!-- Team Section -->
     <section class="section-padding" style="background: white;">
         <div class="container">
-            <div class="text-center mb-5">
+            <div class="text-center mb-5 animate-on-scroll" data-animation="fade-in-up">
                 <h2 class="mb-2">Meet Our Lead Artists</h2>
                 <p>The creative hands behind your kits and workshops</p>
             </div>
 
             <div class="card-grid">
                 <!-- Team 1 -->
-                <div class="product-card" style="text-align: center; border: none; box-shadow: none;">
+                <div class="product-card animate-on-scroll" data-animation="fade-in-up"
+                    style="text-align: center; border: none; box-shadow: none;">
                     <div
                         style="width: 150px; height: 150px; margin: 0 auto 20px; border-radius: 50%; overflow: hidden;">
                         <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Artist">
+                            alt="Sarah Jenkins - Lead Ceramics Instructor">
                     </div>
                     <h3 class="mb-1" style="font-size: 20px;">Sarah Jenkins</h3>
                     <p style="color: var(--primary); margin-bottom: 10px;">Ceramics Lead</p>
@@ -119,11 +131,12 @@
                 </div>
 
                 <!-- Team 2 -->
-                <div class="product-card" style="text-align: center; border: none; box-shadow: none;">
+                <div class="product-card animate-on-scroll" data-animation="fade-in-up"
+                    style="text-align: center; border: none; box-shadow: none;">
                     <div
                         style="width: 150px; height: 150px; margin: 0 auto 20px; border-radius: 50%; overflow: hidden;">
                         <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Artist">
+                            alt="David Chen - Textile Arts Master">
                     </div>
                     <h3 class="mb-1" style="font-size: 20px;">David Chen</h3>
                     <p style="color: var(--primary); margin-bottom: 10px;">Textile Master</p>
@@ -131,17 +144,69 @@
                 </div>
 
                 <!-- Team 3 -->
-                <div class="product-card" style="text-align: center; border: none; box-shadow: none;">
+                <div class="product-card animate-on-scroll" data-animation="fade-in-up"
+                    style="text-align: center; border: none; box-shadow: none;">
                     <div
                         style="width: 150px; height: 150px; margin: 0 auto 20px; border-radius: 50%; overflow: hidden;">
                         <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                            alt="Artist">
+                            alt="Elena Rodriguez - Painting and Fine Art Instructor">
                     </div>
                     <h3 class="mb-1" style="font-size: 20px;">Elena Rodriguez</h3>
                     <p style="color: var(--primary); margin-bottom: 10px;">Painting Instructor</p>
                     <p style="font-size: 14px; color: #666;">Specializes in watercolors and helping beginners let go.
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="section-padding" style="background: var(--secondary);">
+        <div class="container">
+            <div class="text-center mb-5 animate-on-scroll" data-animation="fade-in-up">
+                <h2>Our Core Values</h2>
+                <p>What drives us every single day</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll" data-animation="fade-in-up" style="background: white;">
+                    <i class="fa-solid fa-heart service-icon"></i>
+                    <h3>Passion First</h3>
+                    <p>We do what we love, and it shows in every kit we produce.</p>
+                </div>
+                <div class="service-card animate-on-scroll" data-animation="fade-in-up" style="background: white;">
+                    <i class="fa-solid fa-seedling service-icon"></i>
+                    <h3>Sustainability</h3>
+                    <p>We source eco-friendly materials whenever possible to protect our earth.</p>
+                </div>
+                <div class="service-card animate-on-scroll" data-animation="fade-in-up" style="background: white;">
+                    <i class="fa-solid fa-users service-icon"></i>
+                    <h3>Inclusive Art</h3>
+                    <p>Art is for everyone. We strive to make our tutorials accessible to all skill levels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Studio Gallery Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 animate-on-scroll" data-animation="fade-in-up">
+                <h2>Behind the Scenes</h2>
+                <p>Take a peek into our creative sanctuary</p>
+            </div>
+            <div class="card-grid">
+                <img class="animate-on-scroll" data-animation="fade-in-up"
+                    src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=800"
+                    alt="Artist palette and brushes"
+                    style="width: 100%; height: 250px; object-fit: cover; border-radius: 15px;">
+                <img class="animate-on-scroll" data-animation="fade-in-up"
+                    src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?q=80&w=800"
+                    alt="Handmade pottery on shelves"
+                    style="width: 100%; height: 250px; object-fit: cover; border-radius: 15px;">
+                <img class="animate-on-scroll" data-animation="fade-in-up"
+                    src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?q=80&w=800"
+                    alt="Embroidery work in progress"
+                    style="width: 100%; height: 250px; object-fit: cover; border-radius: 15px;">
             </div>
         </div>
     </section>
@@ -205,3 +270,5 @@
 </body>
 
 </html>
+
+

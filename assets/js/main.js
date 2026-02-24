@@ -1,41 +1,65 @@
-/* Main JS for DIY Craft Studio */
+/**
+ * DIY Craft Studio - Main JavaScript
+ * Handles smooth animations and scroll-reveal effects
+ */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile Menu Toggle
+    // 1. Initialize Animation Observer
+    const animationObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add the 'show' class to trigger CSS transition
+                entry.target.classList.add('show');
+                // Optional: Stop observing after animation triggers
+                // animationObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.15, // Trigger when 15% of the element is visible
+        rootMargin: '0px 0px -50px 0px' // Slightly offset the trigger point
+    });
+
+    // 2. Select and Observe Elements
+    const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
+    elementsToAnimate.forEach(element => {
+        animationObserver.observe(element);
+    });
+
+    // 3. Mobile Hamburger Menu (Existing logic restoration)
     const hamburger = document.querySelector('.hamburger');
     const mobileMenu = document.querySelector('.mobile-menu');
     const overlay = document.querySelector('.overlay');
-    
-    // Create elements if they don't exist in HTML (or assume they will be there)
-    // Checks to prevent errors if elements aren't found on specific pages
-    if (hamburger && mobileMenu) {
-        // Close button for mobile menu
-        const closeBtn = document.createElement('div');
-        closeBtn.innerHTML = '&times;';
-        closeBtn.style.cssText = 'position: absolute; top: 20px; right: 20px; font-size: 30px; cursor: pointer; color: var(--tertiary);';
-        mobileMenu.appendChild(closeBtn);
 
+    if (hamburger && mobileMenu && overlay) {
         hamburger.addEventListener('click', () => {
-            mobileMenu.classList.add('active');
-            if(overlay) overlay.classList.add('active');
+            mobileMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
         });
 
-        const closeMenu = () => {
+        overlay.addEventListener('click', () => {
             mobileMenu.classList.remove('active');
-            if(overlay) overlay.classList.remove('active');
-        };
+            overlay.classList.remove('active');
+        });
 
-        closeBtn.addEventListener('click', closeMenu);
-        if(overlay) overlay.addEventListener('click', closeMenu);
+        // Close menu when clicking links
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+        });
     }
 
-    // Header Scroll Effect
+    // 4. Header Scroll Effect
     const header = document.querySelector('.header');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
-        } else {
-            header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.03)';
-        }
-    });
+    if (header) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    }
 });

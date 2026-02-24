@@ -7,6 +7,12 @@
     <title>Pottery Starter Kit - DIY Craft Studio</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
@@ -19,7 +25,9 @@
             </a>
 
             <nav class="nav-menu">
-                <a href="index.html" class="nav-item">Home</a>
+                <a href="index.html" class="nav-item">Home 1</a>
+                <a href="home2.html" class="nav-item">Home 2</a>
+                <a href="about.html" class="nav-item">About</a>
                 <a href="services.html" class="nav-item active">Workshops</a>
                 <a href="services.html" class="nav-item active">Kits</a>
                 <a href="services.html" class="nav-item active">Tutorials</a>
@@ -41,9 +49,18 @@
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu">
         <div style="margin-top: 50px;">
-            <a href="index.html" class="sidebar-item">Home</a>
-            <a href="services.html" class="sidebar-item">Services</a>
-            <!-- ... -->
+            <a href="index.html" class="sidebar-item">Home 1</a>
+            <a href="home2.html" class="sidebar-item">Home 2</a>
+            <a href="about.html" class="sidebar-item">About</a>
+            <a href="services.html" class="sidebar-item">Workshops</a>
+            <a href="services.html" class="sidebar-item">Kits</a>
+            <a href="services.html" class="sidebar-item">Tutorials</a>
+            <a href="blog.html" class="sidebar-item">Blog</a>
+            <a href="pricing.html" class="sidebar-item">Pricing</a>
+            <a href="contact.html" class="sidebar-item">Contact</a>
+            <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+            <a href="login.html" class="sidebar-item">Login</a>
+            <a href="register.html" class="sidebar-item">Sign Up</a>
         </div>
     </div>
     <div class="overlay"></div>
@@ -53,19 +70,21 @@
         <div class="container">
             <div style="display: flex; gap: 50px; flex-wrap: wrap;">
                 <!-- Image Gallery -->
-                <div style="flex: 1; min-width: 300px;">
+                <div style="flex: 1; min-width: 300px;" class="animate-on-scroll" data-animation="slide-in-left">
                     <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                         alt="Pottery Kit" style="border-radius: 20px; width: 100%; margin-bottom: 20px;">
                     <div style="display: flex; gap: 10px;">
                         <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                            alt="Pottery kit contents view"
                             style="width: 80px; height: 80px; object-fit: cover; border-radius: 10px; cursor: pointer;">
                         <img src="https://images.unsplash.com/photo-1616428453472-b7e1ce247752?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                            alt="Student crafting a bowl with the kit"
                             style="width: 80px; height: 80px; object-fit: cover; border-radius: 10px; cursor: pointer;">
                     </div>
                 </div>
 
                 <!-- Product Info -->
-                <div style="flex: 1; min-width: 300px;">
+                <div style="flex: 1; min-width: 300px;" class="animate-on-scroll" data-animation="slide-in-right">
                     <span
                         style="color: var(--primary); font-weight: 600; font-size: 14px; text-transform: uppercase;">Ready-to-Use
                         Kit</span>
@@ -121,23 +140,25 @@
     <!-- FAQ Section -->
     <section class="section-padding" style="background: white;">
         <div class="container" style="max-width: 800px;">
-            <div class="text-center mb-5">
+            <div class="text-center mb-5 animate-on-scroll" data-animation="fade-in-up">
                 <h2>Frequently Asked Questions</h2>
             </div>
 
-            <div style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+            <div style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px;"
+                class="animate-on-scroll" data-animation="fade-in-up">
                 <h4 style="margin-bottom: 10px;">Do I need a kiln for this clay?</h4>
                 <p style="color: #666;">No! This is premium air-dry clay. It dries hard in 24-48 hours. However, it is
                     not food safe for liquids unless you use a waterproof sealant (included in Premium Kit).</p>
             </div>
 
-            <div style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+            <div style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px;"
+                class="animate-on-scroll" data-animation="fade-in-up">
                 <h4 style="margin-bottom: 10px;">Is this suitable for kids?</h4>
                 <p style="color: #666;">Yes, absolutely! It's non-toxic and great for ages 6+. We recommend adult
                     supervision for using the cutting tools.</p>
             </div>
 
-            <div style="margin-bottom: 20px;">
+            <div style="margin-bottom: 20px;" class="animate-on-scroll" data-animation="fade-in-up">
                 <h4 style="margin-bottom: 10px;">Does it come with video instructions?</h4>
                 <p style="color: #666;">Yes, every kit includes a QR code that links to our exclusive video tutorial
                     library.</p>
@@ -145,16 +166,134 @@
         </div>
     </section>
 
+    <!-- Reviews Section -->
+    <section class="section-padding" style="background: var(--secondary);">
+        <div class="container text-center">
+            <div class="text-center mb-5 animate-on-scroll" data-animation="fade-in-up">
+                <h2>Maker Reviews</h2>
+                <p>See what others have created with this kit</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card animate-on-scroll" data-animation="fade-in-up" style="background: white;">
+                    <div style="color: #F4B400; font-size: 14px; margin-bottom: 15px;">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The clay is so smooth and the tools are exactly what I needed. I made
+                        three vases in one weekend!"</p>
+                    <div class="testimonial-user">
+                        <h4>Jane Cooper</h4>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll" data-animation="fade-in-up" style="background: white;">
+                    <div style="color: #F4B400; font-size: 14px; margin-bottom: 15px;">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Instructions were crystal clear. Even as someone who isn't 'artistic',
+                        I felt like a pro potte."</p>
+                    <div class="testimonial-user">
+                        <h4>Robert Fox</h4>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="section-padding">
+        <div class="container text-center">
+            <div class="text-center mb-5 animate-on-scroll" data-animation="fade-in-up">
+                <h2>Related Crafts</h2>
+                <p>Kits you might also enjoy</p>
+            </div>
+            <div class="card-grid">
+                <!-- Related 1 -->
+                <div class="product-card animate-on-scroll" data-animation="fade-in-up">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?q=80&w=400"
+                            alt="Embroidery Kit">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Floral Embroidery Set</h3>
+                        <span class="card-price">$28.00</span>
+                    </div>
+                </div>
+                <!-- Related 2 -->
+                <div class="product-card animate-on-scroll" data-animation="fade-in-up">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=400"
+                            alt="Painting Kit">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Acrylic Pour Box</h3>
+                        <span class="card-price">$55.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section-padding">
+        <div class="container text-center">
+            <div class="cta-box animate-on-scroll" data-animation="fade-in-up">
+                <h2>Join a Live Session?</h2>
+                <p>If you prefer learning in person, check out our upcoming studio workshops.</p>
+                <a href="services.html" class="btn btn-primary" style="background: white; color: var(--primary);">View
+                    Workshops</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
-        <!-- Reusing Footer Structure -->
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
                     <h2><i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio</h2>
-                    <p class="footer-text">Empowering creativity through accessible tools.</p>
+                    <p class="footer-text">Empowering creativity through accessible tools, expert guidance, and a
+                        supportive community. Start your journey today.</p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#"><i class="fa-brands fa-instagram"
+                                style="font-size: 20px; color: var(--tertiary);"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"
+                                style="font-size: 20px; color: var(--tertiary);"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"
+                                style="font-size: 20px; color: var(--tertiary);"></i></a>
+                    </div>
                 </div>
-                <!-- ... -->
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="footer-text">Get fresh DIY ideas and exclusive discounts.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email">
+                        <button type="submit" class="btn btn-primary" style="padding: 12px 20px;"><i
+                                class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 DIY Craft Studio. All rights reserved.</p>
@@ -166,3 +305,5 @@
 </body>
 
 </html>
+
+

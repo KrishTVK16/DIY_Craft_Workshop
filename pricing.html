@@ -7,6 +7,12 @@
     <title>Pricing - DIY Craft Studio</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
@@ -18,8 +24,12 @@
                 <i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio
             </a>
             <nav class="nav-menu">
-                <a href="index.html" class="nav-item">Home</a>
-                <a href="services.html" class="nav-item">Services</a>
+                <a href="index.html" class="nav-item">Home 1</a>
+                <a href="home2.html" class="nav-item">Home 2</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="services.html" class="nav-item">Workshops</a>
+                <a href="services.html" class="nav-item">Kits</a>
+                <a href="services.html" class="nav-item">Tutorials</a>
                 <a href="blog.html" class="nav-item">Blog</a>
                 <a href="pricing.html" class="nav-item active">Pricing</a>
                 <a href="contact.html" class="nav-item">Contact</a>
@@ -37,16 +47,25 @@
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu">
         <div style="margin-top: 50px;">
-            <a href="index.html" class="sidebar-item">Home</a>
+            <a href="index.html" class="sidebar-item">Home 1</a>
+            <a href="home2.html" class="sidebar-item">Home 2</a>
+            <a href="about.html" class="sidebar-item">About</a>
+            <a href="services.html" class="sidebar-item">Workshops</a>
+            <a href="services.html" class="sidebar-item">Kits</a>
+            <a href="services.html" class="sidebar-item">Tutorials</a>
+            <a href="blog.html" class="sidebar-item">Blog</a>
             <a href="pricing.html" class="sidebar-item">Pricing</a>
-            <!-- ... -->
+            <a href="contact.html" class="sidebar-item">Contact</a>
+            <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+            <a href="login.html" class="sidebar-item">Login</a>
+            <a href="register.html" class="sidebar-item">Sign Up</a>
         </div>
     </div>
     <div class="overlay"></div>
 
     <!-- Page Header -->
     <div class="section-padding text-center" style="background: white;">
-        <div class="container">
+        <div class="container animate-on-scroll" data-animation="fade-in-up">
             <h1 class="mb-2">Choose Your Creative Path</h1>
             <p>Flexible plans for hobbyists, serious crafters, and aspiring professionals.</p>
         </div>
@@ -58,7 +77,8 @@
             <div class="services-grid" style="align-items: center;">
 
                 <!-- Starter -->
-                <div class="service-card" style="padding: 40px 30px; border: 1px solid #eee;">
+                <div class="service-card animate-on-scroll" data-animation="fade-in-up"
+                    style="padding: 40px 30px; border: 1px solid #eee;">
                     <h3 style="font-size: 24px;">Starter</h3>
                     <p style="color: #666; font-size: 14px; margin-bottom: 20px;">For casual crafters</p>
                     <div style="font-size: 42px; font-weight: 700; color: var(--primary); margin-bottom: 30px;">
@@ -78,7 +98,7 @@
                 </div>
 
                 <!-- Creator (Featured) -->
-                <div class="service-card"
+                <div class="service-card animate-on-scroll" data-animation="fade-in-up"
                     style="padding: 50px 30px; border: 2px solid var(--primary); transform: scale(1.05); box-shadow: var(--card-shadow); position: relative;">
                     <div
                         style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary); color: white; padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: 600;">
@@ -102,7 +122,8 @@
                 </div>
 
                 <!-- Pro Artist -->
-                <div class="service-card" style="padding: 40px 30px; border: 1px solid #eee;">
+                <div class="service-card animate-on-scroll" data-animation="fade-in-up"
+                    style="padding: 40px 30px; border: 1px solid #eee;">
                     <h3 style="font-size: 24px;">Pro Artist</h3>
                     <p style="color: #666; font-size: 14px; margin-bottom: 20px;">For serious makers</p>
                     <div style="font-size: 42px; font-weight: 700; color: var(--primary); margin-bottom: 30px;">
@@ -125,6 +146,104 @@
         </div>
     </section>
 
+    <!-- Comparison Section -->
+    <section class="section-padding" style="background: white;">
+        <div class="container">
+            <div class="text-center mb-5 animate-on-scroll" data-animation="fade-in-up">
+                <h2>Compare Plans</h2>
+                <p>Find the perfect fit for your creative journey</p>
+            </div>
+            <div class="table-container shadow-sm animate-on-scroll" data-animation="fade-in-up">
+                <table
+                    style="width: 100%; border-collapse: collapse; background: white; border-radius: 15px; overflow: hidden;">
+                    <thead style="background: #f8f9fa;">
+                        <tr>
+                            <th style="padding: 20px; text-align: left; border-bottom: 2px solid #eee;">Feature</th>
+                            <th style="padding: 20px; text-align: center; border-bottom: 2px solid #eee;">Starter</th>
+                            <th style="padding: 20px; text-align: center; border-bottom: 2px solid #eee;">Creator</th>
+                            <th style="padding: 20px; text-align: center; border-bottom: 2px solid #eee;">Pro Artist
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 15px 20px; border-bottom: 1px solid #eee;">Free Tutorials</td>
+                            <td style="padding: 15px 20px; text-align: center; border-bottom: 1px solid #eee;"><i
+                                    class="fa-solid fa-check text-success"></i></td>
+                            <td style="padding: 15px 20px; text-align: center; border-bottom: 1px solid #eee;"><i
+                                    class="fa-solid fa-check text-success"></i></td>
+                            <td style="padding: 15px 20px; text-align: center; border-bottom: 1px solid #eee;"><i
+                                    class="fa-solid fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px 20px; border-bottom: 1px solid #eee;">Premium Videos</td>
+                            <td style="padding: 15px 20px; text-align: center; border-bottom: 1px solid #eee;"><i
+                                    class="fa-solid fa-xmark text-muted"></i></td>
+                            <td style="padding: 15px 20px; text-align: center; border-bottom: 1px solid #eee;">Unlimited
+                            </td>
+                            <td style="padding: 15px 20px; text-align: center; border-bottom: 1px solid #eee;">Unlimited
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px 20px; border-bottom: 1px solid #eee;">Kit Discounts</td>
+                            <td style="padding: 15px 20px; text-align: center; border-bottom: 1px solid #eee;">0%</td>
+                            <td style="padding: 15px 20px; text-align: center; border-bottom: 1px solid #eee;">10%</td>
+                            <td style="padding: 15px 20px; text-align: center; border-bottom: 1px solid #eee;">20%</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px 20px; border-bottom: 1px solid #eee;">Monthly Workshop</td>
+                            <td style="padding: 15px 20px; text-align: center; border-bottom: 1px solid #eee;"><i
+                                    class="fa-solid fa-xmark text-muted"></i></td>
+                            <td style="padding: 15px 20px; text-align: center; border-bottom: 1px solid #eee;"><i
+                                    class="fa-solid fa-xmark text-muted"></i></td>
+                            <td style="padding: 15px 20px; text-align: center; border-bottom: 1px solid #eee;">1 Free
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding" style="background: var(--secondary);">
+        <div class="container" style="max-width: 800px;">
+            <div class="text-center mb-5 animate-on-scroll" data-animation="fade-in-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our plans</p>
+            </div>
+            <div style="display: grid; gap: 20px;">
+                <div class="animate-on-scroll" data-animation="fade-in-up"
+                    style="background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.02);">
+                    <h4 class="mb-2">Can I cancel my subscription anytime?</h4>
+                    <p style="color: #666;">Yes, you can cancel or change your plan at any time from your dashboard
+                        settings.</p>
+                </div>
+                <div class="animate-on-scroll" data-animation="fade-in-up"
+                    style="background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.02);">
+                    <h4 class="mb-2">Do the discounts apply to sale items?</h4>
+                    <p style="color: #666;">Member discounts apply to regular priced items and cannot be combined with
+                        other major promotions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="cta-box animate-on-scroll" data-animation="fade-in-up">
+                <h2>Ready to Elevate Your Craft?</h2>
+                <p>Join thousands of makers and start your 7-day free trial today.</p>
+                <div style="display: flex; gap: 20px; justify-content: center; margin-top: 25px;">
+                    <a href="register.html" class="btn btn-primary">Get Started Now</a>
+                    <a href="contact.html" class="btn btn-outline" style="color: white; border-color: white;">Talk to
+                        Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <!-- ... -->
@@ -139,3 +258,5 @@
 </body>
 
 </html>
+
+

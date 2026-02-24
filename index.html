@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
+
 <body>
 
     <!-- Header -->
@@ -16,9 +24,11 @@
             <a href="index.html" class="logo">
                 <i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio
             </a>
-            
+
             <nav class="nav-menu">
-                <a href="index.html" class="nav-item active">Home</a>
+                <a href="index.html" class="nav-item active">Home 1</a>
+                <a href="home2.html" class="nav-item">Home 2</a>
+                <a href="about.html" class="nav-item">About</a>
                 <a href="services.html" class="nav-item">Workshops</a>
                 <a href="services.html" class="nav-item">Kits</a>
                 <a href="services.html" class="nav-item">Tutorials</a>
@@ -40,7 +50,9 @@
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu">
         <div style="margin-top: 50px;">
-            <a href="index.html" class="sidebar-item">Home</a>
+            <a href="index.html" class="sidebar-item">Home 1</a>
+            <a href="home2.html" class="sidebar-item">Home 2</a>
+            <a href="about.html" class="sidebar-item">About</a>
             <a href="services.html" class="sidebar-item">Workshops</a>
             <a href="services.html" class="sidebar-item">Kits</a>
             <a href="services.html" class="sidebar-item">Tutorials</a>
@@ -56,27 +68,29 @@
 
     <!-- Hero Section -->
     <section class="hero container">
-        <div class="hero-content">
+        <div class="hero-content animate-on-scroll" data-animation="slide-in-left">
             <span class="hero-tag">✨ #1 Creative Platform</span>
             <h1 class="hero-title">Unleash Your Inner Artist with DIY Crafts</h1>
-            <p class="hero-text">Join our workshops, buy premium craft kits, or learn online at your own pace. Everything you need to create something beautiful, all in one place.</p>
+            <p class="hero-text">Join our workshops, buy premium craft kits, or learn online at your own pace.
+                Everything you need to create something beautiful, all in one place.</p>
             <div style="display: flex; gap: 15px;">
-                <a href="services.html" class="btn btn-primary">Browse Kits</a>
-                <a href="services.html" class="btn btn-outline">Book Workshop</a>
+                <a href="#kits" class="btn btn-primary">Browse Kits</a>
+                <a href="#workshops" class="btn btn-outline">Book Workshop</a>
             </div>
         </div>
-        <div class="hero-image">
+        <div class="hero-image animate-on-scroll" data-animation="slide-in-right">
             <div class="hero-img-wrapper">
-                <!-- Placeholder Image -->
-                <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Creative Craft Workshop">
+                <!-- Hero Image -->
+                <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Artistic DIY workshop space with various craft tools and materials">
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="section-padding" style="background-color: white;">
+    <section id="workshops" class="section-padding" style="background-color: white;">
         <div class="container">
-            <div class="text-center mb-5">
+            <div class="text-center mb-5 animate-on-scroll" data-animation="fade-in-up">
                 <h4 style="color: var(--primary);">Our Services</h4>
                 <h2>Ways to Learn & Create</h2>
                 <p>Choose the learning style that fits you best</p>
@@ -84,7 +98,7 @@
 
             <div class="services-grid">
                 <!-- Workshops -->
-                <article class="service-card">
+                <article class="service-card animate-on-scroll" data-animation="fade-in-up">
                     <i class="fa-solid fa-chalkboard-user service-icon"></i>
                     <h3 class="service-title">Live Workshops</h3>
                     <p class="mb-3">Join us in-studio for hands-on guidance from expert artists.</p>
@@ -92,7 +106,7 @@
                 </article>
 
                 <!-- Kits -->
-                <article class="service-card">
+                <article class="service-card animate-on-scroll" data-animation="fade-in-up">
                     <i class="fa-solid fa-box-open service-icon"></i>
                     <h3 class="service-title">DIY Craft Kits</h3>
                     <p class="mb-3">Premium materials delivered to your door with instructions.</p>
@@ -100,7 +114,7 @@
                 </article>
 
                 <!-- Tutorials -->
-                <article class="service-card">
+                <article class="service-card animate-on-scroll" data-animation="fade-in-up">
                     <i class="fa-solid fa-video service-icon"></i>
                     <h3 class="service-title">Online Tutorials</h3>
                     <p class="mb-3">Watch high-quality video lessons anytime, anywhere.</p>
@@ -111,22 +125,25 @@
     </section>
 
     <!-- Trending Kits Preview -->
-    <section class="section-padding">
+    <section id="kits" class="section-padding">
         <div class="container">
-            <div style="display: flex; justify-content: space-between; align-items: end; margin-bottom: 40px;">
+            <div class="animate-on-scroll" data-animation="fade-in-up"
+                style="display: flex; justify-content: space-between; align-items: end; margin-bottom: 40px;">
                 <div>
                     <h4 style="color: var(--primary);">Shop</h4>
                     <h2>Trending DIY Kits</h2>
                 </div>
-                <a href="services.html" style="color: var(--primary); font-weight: 600;">View All <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="services.html" style="color: var(--primary); font-weight: 600;">View All <i
+                        class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <div class="card-grid">
                 <!-- Kit 1 -->
-                <div class="product-card">
+                <div class="product-card animate-on-scroll" data-animation="fade-in-up">
                     <div class="card-img">
                         <span class="card-badge">Best Seller</span>
-                        <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pottery Kit">
+                        <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Home Pottery Starter Kit - Includes clay, modeling tools, and instructions">
                     </div>
                     <div class="card-body">
                         <span class="card-category">Ceramics</span>
@@ -134,16 +151,18 @@
                         <span class="card-price">$45.00</span>
                         <div class="card-footer">
                             <span class="rating"><i class="fa-solid fa-star"></i> 4.9 (120)</span>
-                            <button class="btn-outline" style="padding: 5px 15px; font-size: 12px; border-radius: 5px;">Add</button>
+                            <button class="btn-outline"
+                                style="padding: 5px 15px; font-size: 12px; border-radius: 5px;">Add</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Kit 2 -->
-                <div class="product-card">
+                <div class="product-card animate-on-scroll" data-animation="fade-in-up">
                     <div class="card-img">
                         <span class="card-badge">New</span>
-                        <img src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Embroidery Kit">
+                        <img src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Floral Embroidery Set with colorful threads and wooden hoop">
                     </div>
                     <div class="card-body">
                         <span class="card-category">Textiles</span>
@@ -151,26 +170,83 @@
                         <span class="card-price">$28.00</span>
                         <div class="card-footer">
                             <span class="rating"><i class="fa-solid fa-star"></i> 4.8 (85)</span>
-                            <button class="btn-outline" style="padding: 5px 15px; font-size: 12px; border-radius: 5px;">Add</button>
+                            <button class="btn-outline"
+                                style="padding: 5px 15px; font-size: 12px; border-radius: 5px;">Add</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Kit 3 -->
-                <div class="product-card">
+                <div class="product-card animate-on-scroll" data-animation="fade-in-up">
                     <div class="card-img">
-                         <span class="card-badge" style="background: var(--tertiary); color: white;">Sale</span>
-                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Painting Kit">
+                        <span class="card-badge" style="background: var(--tertiary); color: white;">Sale</span>
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Acrylic Painting Master Box with premium brushes and paint tubes">
                     </div>
                     <div class="card-body">
                         <span class="card-category">Art</span>
                         <h3 class="card-title">Acrylic Painting Master Box</h3>
-                        <span class="card-price">$55.00 <span style="text-decoration: line-through; color: #999; font-size: 14px; margin-left:5px;">$65.00</span></span>
+                        <span class="card-price">$55.00 <span
+                                style="text-decoration: line-through; color: #999; font-size: 14px; margin-left:5px;">$65.00</span></span>
                         <div class="card-footer">
                             <span class="rating"><i class="fa-solid fa-star"></i> 5.0 (42)</span>
-                            <button class="btn-outline" style="padding: 5px 15px; font-size: 12px; border-radius: 5px;">Add</button>
+                            <button class="btn-outline"
+                                style="padding: 5px 15px; font-size: 12px; border-radius: 5px;">Add</button>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="community" class="section-padding" style="background-color: white;">
+        <div class="container">
+            <div class="text-center mb-5 animate-on-scroll" data-animation="fade-in-up">
+                <h4 style="color: var(--primary);">Community</h4>
+                <h2>Voices from the Studio</h2>
+                <p>Read what our fellow makers have to say about their experience.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card animate-on-scroll" data-animation="fade-in-up">
+                    <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="testimonial-text">"The pottery workshop was transformative! I walked away with a beautiful
+                        bowl and a new passion."</p>
+                    <div class="testimonial-user">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop"
+                            alt="Sarah Jenkins">
+                        <div class="testimonial-info">
+                            <h4>Sarah Jenkins</h4>
+                            <span>Pottery Student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll" data-animation="fade-in-up">
+                    <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="testimonial-text">"I bought the embroidery kit and it was perfect. The materials are high
+                        quality and instructions are so easy to follow."</p>
+                    <div class="testimonial-user">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop"
+                            alt="Mark Thompson">
+                        <div class="testimonial-info">
+                            <h4>Mark Thompson</h4>
+                            <span>Kit Enthusiast</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="cta-box animate-on-scroll" data-animation="fade-in-up">
+                <h2>Ready to Start Creating?</h2>
+                <p>Join our next workshop or get a premium DIY kit delivered to your doorstep.</p>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="services.html" class="btn btn-primary">Book a Workshop</a>
+                    <a href="services.html" class="btn btn-outline" style="color: white; border-color: white;">Shop DIY
+                        Kits</a>
                 </div>
             </div>
         </div>
@@ -182,11 +258,15 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <h2><i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio</h2>
-                    <p class="footer-text">Empowering creativity through accessible tools, expert guidance, and a supportive community. Start your journey today.</p>
+                    <p class="footer-text">Empowering creativity through accessible tools, expert guidance, and a
+                        supportive community. Start your journey today.</p>
                     <div style="display: flex; gap: 15px;">
-                        <a href="#"><i class="fa-brands fa-instagram" style="font-size: 20px; color: var(--tertiary);"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook" style="font-size: 20px; color: var(--tertiary);"></i></a>
-                        <a href="#"><i class="fa-brands fa-pinterest" style="font-size: 20px; color: var(--tertiary);"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"
+                                style="font-size: 20px; color: var(--tertiary);"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"
+                                style="font-size: 20px; color: var(--tertiary);"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"
+                                style="font-size: 20px; color: var(--tertiary);"></i></a>
                     </div>
                 </div>
 
@@ -215,7 +295,8 @@
                     <p class="footer-text">Get fresh DIY ideas and exclusive discounts.</p>
                     <form class="newsletter-form">
                         <input type="email" class="newsletter-input" placeholder="Your email">
-                        <button type="submit" class="btn btn-primary" style="padding: 12px 20px;"><i class="fa-solid fa-paper-plane"></i></button>
+                        <button type="submit" class="btn btn-primary" style="padding: 12px 20px;"><i
+                                class="fa-solid fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
@@ -228,4 +309,7 @@
 
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
+
+

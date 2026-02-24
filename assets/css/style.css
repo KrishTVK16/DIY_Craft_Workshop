@@ -204,18 +204,30 @@ img {
     align-items: center;
 }
 
-.logo {
+/* ── Brand Identity ── */
+.logo,
+.footer-brand h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
     font-weight: 700;
     color: var(--primary);
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    transition: var(--transition);
 }
 
-.logo span {
+.logo span,
+.footer-brand h2 span {
     color: var(--tertiary);
+}
+
+.logo i,
+.footer-brand h2 i {
+    font-size: 22px;
+    color: var(--primary);
 }
 
 .nav-menu {
@@ -633,7 +645,6 @@ td {
 }
 
 .footer-brand h2 {
-    color: var(--primary);
     margin-bottom: 20px;
 }
 

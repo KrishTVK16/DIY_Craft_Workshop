@@ -8,14 +8,63 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="assets/favicon (2).ico">
 </head>
 
 <body style="min-height: 100vh; display: flex; flex-direction: column;">
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio
+            </a>
 
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Home 1</a>
+                <a href="home2.html" class="nav-item">Home 2</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="services.html" class="nav-item">Workshops</a>
+                <a href="services.html" class="nav-item">Kits</a>
+                <a href="services.html" class="nav-item">Tutorials</a>
+                <a href="blog.html" class="nav-item">Blog</a>
+                <a href="pricing.html" class="nav-item">Pricing</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </nav>
 
+            <div class="nav-actions">
+                <div class="theme-toggle" id="theme-toggle" title="Toggle Light/Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+                <a href="login.html" class="nav-item active">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <!-- Login Form -->
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="index.html" class="sidebar-item"><i class="fa-solid fa-house"></i> Home 1</a>
+            <a href="home2.html" class="sidebar-item"><i class="fa-solid fa-store"></i> Home 2</a>
+            <a href="about.html" class="sidebar-item"><i class="fa-solid fa-circle-info"></i> About</a>
+            <a href="services.html" class="sidebar-item"><i class="fa-solid fa-palette"></i> Workshops</a>
+            <a href="services.html" class="sidebar-item"><i class="fa-solid fa-box-open"></i> Kits</a>
+            <a href="services.html" class="sidebar-item"><i class="fa-solid fa-video"></i> Tutorials</a>
+            <a href="blog.html" class="sidebar-item"><i class="fa-solid fa-newspaper"></i> Blog</a>
+            <a href="pricing.html" class="sidebar-item"><i class="fa-solid fa-tags"></i> Pricing</a>
+            <a href="contact.html" class="sidebar-item"><i class="fa-solid fa-envelope"></i> Contact</a>
+            <hr>
+            <div class="mobile-auth-links">
+                <a href="login.html" class="btn btn-outline active">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
     <div
         style="flex: 1; display: flex; align-items: center; justify-content: center; background: var(--secondary); padding: 20px;">
         <div class="animate-on-scroll" data-animation="fade-in-up"
@@ -77,5 +126,3 @@
 </body>
 
 </html>
-
-

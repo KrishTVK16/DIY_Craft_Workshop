@@ -31,23 +31,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const overlay = document.querySelector('.overlay');
 
     if (hamburger && mobileMenu && overlay) {
+        // Hamburger Menu Toggle
         hamburger.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-            overlay.classList.toggle('active');
+            mobileMenu.classList.add('active');
+            overlay.classList.add('active');
+            hamburger.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
         });
 
-        overlay.addEventListener('click', () => {
+        const closeMenu = () => {
             mobileMenu.classList.remove('active');
             overlay.classList.remove('active');
-        });
+            hamburger.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        };
+
+        overlay.addEventListener('click', closeMenu);
 
         // Close menu when clicking links
         const mobileLinks = mobileMenu.querySelectorAll('a');
         mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-                overlay.classList.remove('active');
-            });
+            link.addEventListener('click', closeMenu);
         });
     }
 

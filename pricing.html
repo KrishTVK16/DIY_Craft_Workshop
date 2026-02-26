@@ -78,7 +78,7 @@
     <!-- Pricing Tables -->
     <section class="section-padding">
         <div class="container">
-            <div class="services-grid" style="align-items: center;">
+            <div class="services-grid" style="align-items: center; margin-top: 50px;">
 
                 <!-- Starter -->
                 <div class="service-card animate-on-scroll" data-animation="fade-in-up"
@@ -105,7 +105,7 @@
                 <div class="service-card animate-on-scroll" data-animation="fade-in-up"
                     style="padding: 50px 30px; border: 2px solid var(--primary); transform: scale(1.05); box-shadow: var(--card-shadow); position: relative; overflow: visible;">
                     <div
-                        style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary); color: white; padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: 600;">
+                        style="position: absolute; top: -18px; left: 50%; transform: translateX(-50%); background: var(--primary); color: white; padding: 6px 18px; border-radius: 25px; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; white-space: nowrap; box-shadow: 0 4px 12px rgba(210, 106, 74, 0.4); z-index: 10;">
                         MOST POPULAR</div>
                     <h3 style="font-size: 24px;">Creator</h3>
                     <p style="color: #666; font-size: 14px; margin-bottom: 20px;">For learning artists</p>
@@ -218,20 +218,49 @@
                 <h2>Frequently Asked Questions</h2>
                 <p>Everything you need to know about our plans</p>
             </div>
-            <div style="display: grid; gap: 20px;">
-                <div class="animate-on-scroll" data-animation="fade-in-up"
-                    style="background: var(--bg-card); padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.02);">
-                    <h4 class="mb-2">Can I cancel my subscription anytime?</h4>
-                    <p style="color: var(--text-muted);">Yes, you can cancel or change your plan at any time from your
-                        dashboard
-                        settings.</p>
+            <div class="faq-accordion">
+                <div class="faq-item animate-on-scroll" data-animation="fade-in-up">
+                    <div class="faq-header">
+                        <h4>Can I cancel my subscription anytime?</h4>
+                        <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-content">
+                        <p>Yes, you can cancel or change your plan at any time from your dashboard settings. If you
+                            cancel, you'll still have access to your features until the end of your billing cycle.</p>
+                    </div>
                 </div>
-                <div class="animate-on-scroll" data-animation="fade-in-up"
-                    style="background: var(--bg-card); padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.02);">
-                    <h4 class="mb-2">Do the discounts apply to sale items?</h4>
-                    <p style="color: var(--text-muted);">Member discounts apply to regular priced items and cannot be
-                        combined with
-                        other major promotions.</p>
+
+                <div class="faq-item animate-on-scroll" data-animation="fade-in-up">
+                    <div class="faq-header">
+                        <h4>Do the discounts apply to sale items?</h4>
+                        <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-content">
+                        <p>Member discounts apply to regular priced items and cannot be combined with other major
+                            promotions or clearance items unless specified.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item animate-on-scroll" data-animation="fade-in-up">
+                    <div class="faq-header">
+                        <h4>How do the free workshops work for Pro members?</h4>
+                        <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-content">
+                        <p>Each month, Pro members receive a credit for one free workshop. You can use this for any
+                            in-person or live virtual session available on our schedule.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item animate-on-scroll" data-animation="fade-in-up">
+                    <div class="faq-header">
+                        <h4>What happens if I forget to use my monthly kit credit?</h4>
+                        <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-content">
+                        <p>Credits for the Pro Artist plan roll over for up to 3 months, so you never have to worry
+                            about missing out on a project you love.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -261,13 +290,10 @@
                     <h2><i class="fa-solid fa-paintbrush"></i> DIY<span>Craft</span>Studio</h2>
                     <p class="footer-text">Empowering creativity through accessible tools, expert guidance, and a
                         supportive community. Start your journey today.</p>
-                    <div style="display: flex; gap: 15px;">
-                        <a href="#"><i class="fa-brands fa-instagram"
-                                style="font-size: 20px; color: var(--tertiary);"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"
-                                style="font-size: 20px; color: var(--tertiary);"></i></a>
-                        <a href="#"><i class="fa-brands fa-pinterest"
-                                style="font-size: 20px; color: var(--tertiary);"></i></a>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-pinterest"></i></a>
                     </div>
                 </div>
 
@@ -304,6 +330,7 @@
 
             <div class="footer-bottom">
                 <p>&copy; 2026 DIY Craft Studio. All rights reserved.</p>
+                <a href="#" class="back-to-top" title="Back to Top"><i class="fa-solid fa-arrow-up"></i></a>
             </div>
         </div>
     </footer>

@@ -5,6 +5,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     /* Color Palette - Warm Handmade */
     --primary: #D26A4A;
@@ -426,16 +430,27 @@ body:not(.dark-theme) .theme-toggle i.fa-sun {
 }
 
 .service-icon {
-    font-size: 38px;
+    font-size: 32px;
     color: var(--primary);
     margin-bottom: 22px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 72px;
     height: 72px;
     background: var(--primary-light);
     border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: normal;
+}
+
+.service-icon::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .service-title {
@@ -486,6 +501,11 @@ body:not(.dark-theme) .theme-toggle i.fa-sun {
     font-size: 12px;
     font-weight: 600;
     color: var(--primary);
+}
+
+.card-badge.dark {
+    background: var(--tertiary);
+    color: var(--bg-card);
 }
 
 .card-body {
@@ -668,7 +688,40 @@ td {
 
 .footer-heading {
     margin-bottom: 25px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
     font-size: 18px;
+}
+
+.social-link i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.social-link:hover {
+    background: var(--primary);
+    color: var(--text-light);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(210, 106, 74, 0.3);
+    border-color: var(--primary);
 }
 
 .footer-links li {
@@ -700,11 +753,62 @@ td {
 }
 
 .footer-bottom {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding-top: 30px;
+    padding: 30px 0;
     border-top: 1px solid var(--border-color);
     color: var(--text-muted);
     font-size: 14px;
+}
+
+.back-to-top {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 46px;
+    height: 46px;
+    background: var(--primary);
+    color: white !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(210, 106, 74, 0.2);
+    z-index: 10;
+}
+
+.back-to-top:hover {
+    background: var(--primary-hover);
+    transform: translateY(-55%);
+    box-shadow: 0 8px 25px rgba(210, 106, 74, 0.3);
+}
+
+.back-to-top i {
+    font-size: 18px;
+}
+
+/* Mobile responsive adjustments for back-to-top */
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 50px;
+    }
+
+    .back-to-top {
+        position: static;
+        margin: 10px auto 0;
+        transform: none;
+    }
+
+    .back-to-top:hover {
+        transform: translateY(-5px);
+    }
 }
 
 /* Mobile Offcanvas */
@@ -1433,6 +1537,73 @@ td {
 }
 
 
+/* ── FAQ Accordion ─────────────────────────────────────────── */
+.faq-accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: var(--bg-card);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+}
+
+.faq-header {
+    padding: 22px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.faq-header h4 {
+    margin-bottom: 0;
+    font-size: 17px;
+    color: var(--tertiary);
+}
+
+.faq-icon {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    transition: transform 0.3s ease;
+    font-size: 14px;
+}
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+    padding: 0 28px;
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.faq-item.active .faq-content {
+    max-height: 200px;
+    padding-bottom: 22px;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+}
+
+.faq-item.active {
+    border-color: var(--primary);
+    box-shadow: 0 8px 25px rgba(210, 106, 74, 0.08);
+}
+
+
 /* ── Newsletter Input Focus ─────────────────────────────────── */
 .newsletter-input:focus {
     border-color: var(--primary);
@@ -1587,9 +1758,7 @@ input:focus-visible {
 }
 
 /* Ensuring no horizontal scroll or layout shifts */
-.hero,
-.section-padding,
-.container {
+.hero {
     overflow: hidden;
 }
 
@@ -1650,6 +1819,12 @@ input:focus-visible {
 .btn-social i {
     font-size: 18px;
     transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    line-height: 1;
 }
 
 .btn-google i {
